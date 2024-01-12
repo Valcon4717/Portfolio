@@ -1,19 +1,120 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Common styles or variables... */
   }
+
+  .dark-mode {
+    /* COLORS */
+    --primary: #BB86FC;
+    --primary-varient: #3700B3;
+    --secondary: #03DAC6;
+    --background: #121212;
+    --surface: #121212;
+    --error: #CF6679;
+    --on-primary: #000000;
+    --on-secondary: #000000;
+    --on-background: #E3E3E3;
+    --on-surface: #E3E3E3;
+    --on-error: #000000;
+  }
+
+  .white-mode {
+    /* COLORS */
+    --primary-light: #6200EE ;
+    --primary-varient-light: #3700B3;
+    --secondary-light: #03DAC6;
+    --secondary-varient-light: #018786;
+    --background-light: #f8f8f8;
+    --surface-light: #f8f8f8;
+    --error-light: #B00020;
+    --on-primary-light: #FFFFFF;
+    --on-secondary-light: #000000;
+    --on-background-light: #000000;
+    --on-surface-light: #000000;
+    --on-error-light: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6, subtitle1, subtitle2, body1, body2, button, caption, overline {
+    font-family: 'Roboto';
+    line-height: normal;
+  }
+
+  /* Not Used */
+  h1 {
+    font-size: 6rem;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  h2 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    /* font-weight: 300;  title*/
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 2.125rem;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  h6 {
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  subtitle1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  subtitle2 {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  body1 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  body2 {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  caption {
+    font-size: 0.75rem;
+    font-weight: 400;
+  }
+
+  overline {
+    font-size: 0.9375rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+
 }
 
 body {
