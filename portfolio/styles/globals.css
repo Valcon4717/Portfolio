@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@
 
 @layer base {
   :root {
-    /* Common styles or variables... */
   }
 
   .dark-mode {
@@ -23,106 +22,103 @@
     --on-error: #000000;
   }
 
-  .white-mode {
-    /* COLORS */
-    --primary-light: #6200EE ;
-    --primary-varient-light: #3700B3;
-    --secondary-light: #03DAC6;
-    --secondary-varient-light: #018786;
-    --background-light: #f8f8f8;
-    --surface-light: #f8f8f8;
-    --error-light: #B00020;
-    --on-primary-light: #FFFFFF;
-    --on-secondary-light: #000000;
-    --on-background-light: #000000;
-    --on-surface-light: #000000;
-    --on-error-light: #FFFFFF;
-  }
-
-  h1, h2, h3, h4, h5, h6, subtitle1, subtitle2, body1, body2, button, caption, overline {
-    font-family: 'Roboto';
-    line-height: normal;
-  }
+  /*
+    .white-mode {
+      --primary: #6200EE ;
+      --primary-varient: #3700B3;
+      --secondary: #03DAC6;
+      --secondary-varient: #018786;
+      --background: #f8f8f8;
+      --surface: #f8f8f8;
+      --error: #B00020;
+      --on-primary: #FFFFFF;
+      --on-secondary: #000000;
+      --on-background: #000000;
+      --on-surface: #000000;
+      --on-error: #FFFFFF;
+    }
+  */
 
   /* Not Used */
   h1 {
     font-size: 6rem;
     font-weight: 900;
     font-style: normal;
+    line-height: normal;
   }
 
   h2 {
     font-size: 3.75rem;
     font-weight: 600;
+    line-height: normal;
     /* font-weight: 300;  title*/
   }
 
   h3 {
     font-size: 3rem;
     font-weight: 400;
+    line-height: normal;
   }
 
   h4 {
     font-size: 2.125rem;
     font-weight: 500;
+    line-height: normal;
   }
 
   h5 {
     font-size: 1.5rem;
     font-weight: 400;
+    line-height: normal;
   }
 
   h6 {
     font-size: 1.25rem;
     font-weight: 500;
+    line-height: normal;
   }
 
   subtitle1 {
     font-size: 1rem;
     font-weight: 400;
+    line-height: normal;
   }
 
   subtitle2 {
     font-size: 0.875rem;
     font-weight: 500;
+    line-height: normal;
   }
 
   body1 {
     font-size: 1rem;
     font-weight: 400;
+    line-height: normal;
   }
 
   body2 {
     font-size: 0.875rem;
     font-weight: 400;
+    line-height: normal;
   }
 
   button {
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
+    line-height: normal;
   }
 
   caption {
     font-size: 0.75rem;
     font-weight: 400;
+    line-height: normal;
   }
 
-  overline {
+  .overline-Font {
     font-size: 0.9375rem;
     font-weight: 500;
     text-transform: uppercase;
+    line-height: normal;
   }
-
-
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }

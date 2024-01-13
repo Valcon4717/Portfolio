@@ -1,13 +1,12 @@
 import React from 'react';
+import styles from './navbar.module.css';
 
 const Navbar = () => {
-    return (
-        <div>
-            <h1>
-                navbar
-            </h1>
-        </div>
-    )
+  return (
+    <div className='box'>
+        dfdsfsdf
+    </div>
+  );
 }
 
 export default Navbar;

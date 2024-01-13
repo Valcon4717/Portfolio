@@ -3,9 +3,12 @@ import About from '../components/about'
 export default function Home() {
   return (
     <div>
-      <h1>
+      <h3>
         home
-      </h1>
+      </h3>
+      <p className="overline-Font">
+        dsfjnsdfkjnds
+      </p>
       <About></About>
     </div>
   )
