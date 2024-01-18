@@ -1,12 +1,16 @@
 import React from 'react';
-import styles from './navbar.module.css';
+import Link from 'next/link';
+import styles from '@/styles/navbar.module.css';
 
-const Navbar = () => {
+const Navbar = (props:{theme:any}) => {
   return (
-    <div className='box'>
-        dfdsfsdf
-    </div>
+    <nav className={`${styles.box} ${props.theme}`}>
+      <Link href="/">Home</Link>
+      <Link href="#about">About</Link>
+      <Link href="#experience">Experience</Link>
+      <Link href="#resume">Resume</Link>
+    </nav>
   );
-}
+};
 
 export default Navbar;
