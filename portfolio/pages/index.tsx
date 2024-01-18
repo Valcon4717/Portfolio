@@ -1,16 +1,31 @@
-import About from '../components/about'
+import Footer from "@/components/footer";
+import About from "@/components/about";
+import Experience from "@/components/experience";
+import Resume from "@/components/resume";
+import Navbar from "@/components/navbar";
+import { useState } from "react";
 
-export default function Home() {
+const Home = () => {
+  const [theme, setTheme] = useState("dark-mode");
   return (
-    <div>
-      <h3>
-        home
-      </h3>
-      <p className="overline-Font">
-        dsfjnsdfkjnds
-      </p>
-      <About></About>
+    <div
+      className={`min-h-screen ${theme}`}
+      style={{ backgroundColor: "var(--background)" }}
+    >
+      <Navbar theme={theme}></Navbar>
+      <button
+        onClick={() =>
+          setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")
+        }
+      >
+        Toggle theme
+      </button>
+      <About />
+      <Experience />
+      <Resume />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
+export default Home;
