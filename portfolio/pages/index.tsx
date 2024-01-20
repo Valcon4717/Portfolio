@@ -6,26 +6,24 @@ import Navbar from "@/components/navbar";
 import { useState } from "react";
 
 const Home = () => {
+  // state variable theme initialized to "dark-mode"
   const [theme, setTheme] = useState("dark-mode");
+
   return (
-    <div
-      className={`min-h-screen ${theme}`}
-      style={{ backgroundColor: "var(--background)" }}
-    >
-      <Navbar theme={theme}></Navbar>
-      <button
-        onClick={() =>
-          setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")
-        }
-      >
-        Toggle theme
-      </button>
-      <About />
+    <div>
+      <Navbar 
+        // theme and setTheme props passed to Navbar component
+        // setTheme updates the theme state
+        theme={theme} 
+        toggleTheme={() => setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")}
+      />
+      <About/>
       <Experience />
       <Resume />
-      <Footer />
+      <Footer/>
     </div>
   );
 };
 
 export default Home;
+
