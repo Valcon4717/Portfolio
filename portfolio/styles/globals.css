@@ -6,7 +6,7 @@
 @layer base {
   :root {
     * {
-      transition: background-color 0.2s, color 0.2s, border-color 0.2s, fill 0.2s;
+      transition: background-color 0.2s, border-color 0.2s, fill 0.2s;
     }
   }
 
@@ -23,6 +23,7 @@
     --on-background: #E3E3E3;
     --on-surface: #E3E3E3;
     --on-error: #000000;
+    --navbar: #1e1e1e;
   }
 
   .light-mode {
@@ -38,6 +39,7 @@
     --on-background: #000000;
     --on-surface: #000000;
     --on-error: #FFFFFF;
+    --navbar: #efeff6
   }
 
   /* Not Used */
