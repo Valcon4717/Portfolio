@@ -4,6 +4,7 @@ import Experience from "@/components/experience";
 import Resume from "@/components/resume";
 import Navbar from "@/components/navbar";
 import { useState } from "react";
+import ThemeSwitch from "@/components/themeSwitch";
 
 const Home = () => {
   // state variable theme initialized to "dark-mode"
@@ -11,12 +12,11 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar 
-        // theme and setTheme props passed to Navbar component
-        // setTheme updates the theme state
+      <ThemeSwitch
         theme={theme} 
         toggleTheme={() => setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")}
       />
+      <Navbar theme={theme} />
       <About/>
       <Experience />
       <Resume />

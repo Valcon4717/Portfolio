@@ -1,0 +1,29 @@
+.buttonTheme {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1;
+    background-color: var(--themeButton);
+    border-radius: 50%;
+    width: 3.2rem;
+    height: 3.2rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20), 0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 4px 5px 0px rgba(0, 0, 0, 0.14);    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes expandShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Apply the animation on hover */
+.buttonTheme:hover {
+    animation: expandShrink 0.6s ease;
+}
