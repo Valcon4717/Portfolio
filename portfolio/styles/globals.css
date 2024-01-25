@@ -24,6 +24,7 @@
     --on-surface: #E3E3E3;
     --on-error: #000000;
     --navbar: #1e1e1e;
+    --themeButton: #262626;
   }
 
   .light-mode {
@@ -39,7 +40,8 @@
     --on-background: #000000;
     --on-surface: #000000;
     --on-error: #FFFFFF;
-    --navbar: #efeff6
+    --navbar: #efeff6;
+    --themeButton: #d4d3da;
   }
 
   /* Not Used */
