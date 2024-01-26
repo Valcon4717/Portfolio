@@ -1,0 +1,13 @@
+.section{
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+.personIcon {
+    width: 35rem;
+    height: 35rem;
+    display: flex;
+    align-items: center;
+    margin-left: 50rem;
+    padding-top: 8rem;
+}

@@ -17,7 +17,7 @@ const Home = () => {
         toggleTheme={() => setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")}
       />
       <Navbar theme={theme} />
-      <About/>
+      <About theme={theme}/>
       <Experience />
       <Resume />
       <Footer/>
