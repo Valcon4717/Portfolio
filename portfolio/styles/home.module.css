@@ -11,6 +11,8 @@
     gap: 5rem;
     align-items: center;
     justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .personIcon {
@@ -36,4 +38,21 @@
     font-size: 1.5rem;
     margin-top: 1rem;
     color: var(--primary);
+}
+
+.emoji {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px; 
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15px; 
+    left: 0;
+    right: 0;
+    height: 30px; 
 }
