@@ -1,0 +1,39 @@
+.section {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--background);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.personIcon {
+    position: relative;
+    order: 2;
+    height: 40rem;
+    width: 40rem;
+}
+
+.titleBlock {
+    order: 1;
+    align-self: center;
+}
+
+.title {
+    text-align: left;
+    font-size: 2rem;
+    color: var(--on-background);
+}
+
+.subtitle {
+    text-align: left;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--primary);
+}

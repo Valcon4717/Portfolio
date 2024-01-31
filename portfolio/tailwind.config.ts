@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Roboto', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },

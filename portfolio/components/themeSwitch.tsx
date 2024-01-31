@@ -11,9 +11,10 @@ const ThemeSwitch = (props: { theme:any, toggleTheme:any }) => {
     <div className={props.theme}>
       <button className={styles.buttonTheme} onClick={props.toggleTheme}>
         {props.theme === "dark-mode" ? (
-          <Image src={sunLogo} alt="sun logo" width={20} height={20} /> 
-        ) : (
           <Image src={moonLogo} alt="moon logo" width={20} height={20} />
+
+        ) : (
+          <Image src={sunLogo} alt="sun logo" width={20} height={20} /> 
         )}
       </button>
     </div>
