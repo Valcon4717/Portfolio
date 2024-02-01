@@ -22,8 +22,8 @@ const Navbar = (props: { theme: any }) => {
         <Link to="home" spy={true} smooth={true} duration={500}>Valeria Contreras</Link>
       </h4>
       <h5 className={`${styles.navItems}`}>
-        <Link to="about" spy={true} smooth={true} duration={500}>about</Link>
-        <Link to="experience" spy={true} smooth={true} duration={500}>experience</Link>
+        <Link to="about" spy={true} smooth={true} offset={-50}  duration={500}>about</Link>
+        <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>experience</Link>
         <Link to="resume" spy={true} smooth={true} duration={500}>resume</Link>
       </h5>
     </nav>

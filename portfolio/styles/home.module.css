@@ -54,6 +54,10 @@
     bottom: 2rem; 
 }
 
+.navigation a {
+    cursor: pointer;
+}
+
 @keyframes expandShrink {
     0%, 100% {
         transform: scale(1);

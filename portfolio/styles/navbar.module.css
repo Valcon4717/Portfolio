@@ -8,18 +8,21 @@
   position: fixed;
   width: 100%;
   top: 0;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, background-color var(--transition-duration);
   z-index: 1;
   padding-top: 1.3rem;
-  transition: background-color var(--transition-duration);
 }
 
 .scrolled {
   box-shadow: 0em 4px 12px 5px rgba(0, 0, 0, 0.25);
 }
 
-.title{
+.title {
   padding-left: 3.5rem;
+}
+
+.title a {
+  cursor: pointer;
 }
 
 .navItems {
@@ -35,6 +38,7 @@
 .navItems a {
   position: relative;
   color: inherit;
+  cursor: pointer;
 }
 
 .navItems a::after {
@@ -58,5 +62,3 @@
 .navItems a.active {
   color: var(--primary);
 }
-
-
