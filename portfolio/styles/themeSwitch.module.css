@@ -23,7 +23,6 @@
     }
 }
 
-/* Apply the animation on hover */
 .buttonTheme:hover {
     animation: expandShrink 0.6s ease;
 }

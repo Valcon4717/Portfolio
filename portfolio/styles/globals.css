@@ -5,14 +5,16 @@
 
 body{
   font-family: 'Roboto', sans-serif;
-  scroll-behavior: smooth;
 }
 
 @layer base {
   :root {
-    * {
-      transition: background-color 0.2s;
-    }
+    --transition-duration: 0.2s;
+    --transition-properties: background-color;
+  }
+
+  * {
+    transition: var(--transition-properties) var(--transition-duration);
   }
 
   .dark-mode {
@@ -130,7 +132,7 @@ body{
   }
 
   .main-title {
-    font-size: 4rem;
+    font-size: 3.75rem;
     font-weight: 300;
     line-height: normal;
   }

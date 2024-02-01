@@ -6,7 +6,9 @@ import lightAvatar from "../public/Light/Avatar.svg";
 import wave from "../public/WaveHand.svg";
 import arrowDark from "../public/Dark/HomeDownArrow.svg";
 import arrowLight from "../public/Light/HomeDownArrow.svg";
-import Link from 'next/link';
+import darkGraphic from "../public/Dark/graphic 1.svg";
+import lightGraphic from "../public/Light/graphic 1.svg";
+import { Link } from 'react-scroll';
 
 const Home = (props: { theme:any }) => {
     return (
@@ -14,7 +16,7 @@ const Home = (props: { theme:any }) => {
             <div className={styles.grid}>
                 <div className={styles.titleBlock}>
                     <div className={`${styles.title} ${'main-title'}`}>
-                        Hello, I&apos;m Valeria <Image src={wave} alt="wave" width={40} height={40} className={styles.emoji} />
+                        Hello, I&apos;m Valeria <Image src={wave} alt="wave" width={60} height={60} className={styles.emoji} />
                     </div>
                     <h5 className={styles.subtitle}>
                         software developer
@@ -30,17 +32,25 @@ const Home = (props: { theme:any }) => {
             </div>
             <div className={styles.navigation}>
                 {props.theme === "dark-mode" ? (
-                        <Link href="#about">
+                        <Link to="about" spy={true} smooth={true} duration={500}>
                             <Image src={arrowDark} alt="downArrowDark icon" width={30} height={30}/>
                         </Link>
                         ) : (
-                        <Link href="#about">
+                        <Link to="about" spy={true} smooth={true} duration={500}>
                             <Image src={arrowLight} alt="downArrowLight icon" width={30} height={30}/>
                         </Link>
                         )}            
             </div>
+            <div className={styles.graphic}>
+                {props.theme === "dark-mode" ? (
+                            <Image src={darkGraphic} alt="darkGraphic icon" width={300} height={300} layout="responsive"/>
+                        ) : (
+                            <Image src={lightGraphic} alt="lightGraphic icon" width={300} height={300} layout="responsive"/>
+                        )}
+            </div>
         </div>
     );
 };
+
 
 export default Home;
