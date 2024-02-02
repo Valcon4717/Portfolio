@@ -31,6 +31,7 @@ body{
     --on-surface: #E3E3E3;
     --on-error: #000000;
     --themeButton: #E9EAF0;
+    --subtitle: rgba(227, 227, 227, 0.60);
   }
 
   .light-mode {
@@ -47,6 +48,7 @@ body{
     --on-surface: #000000;
     --on-error: #FFFFFF;
     --themeButton: #24272C;
+    --subtitle: rgba(0, 0, 0, 0.60);
   }
 
   /* Not Used */

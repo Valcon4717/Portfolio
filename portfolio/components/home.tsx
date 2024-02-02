@@ -16,7 +16,7 @@ const Home = (props: { theme: any }) => {
       <div className={styles.grid}>
         <div className={styles.titleBlock}>
           <div className={`${styles.title} ${"main-title"}`}>
-            Hello, I&apos;m Valeria{" "}
+            Hello, I&apos;m Valeria
             <Image
               src={wave}
               alt="wave"
@@ -32,15 +32,17 @@ const Home = (props: { theme: any }) => {
             <Image
               src={darkAvatar}
               alt="darkAvatar icon"
-              layout="fill"
-              objectFit="contain"
+              width={800}
+              height={800}
+              style={{ objectFit: "contain" }}
             />
           ) : (
             <Image
               src={lightAvatar}
               alt="lightAvatar icon"
-              layout="fill"
-              objectFit="contain"
+              width={800}
+              height={800}
+              style={{ objectFit: "contain" }}
             />
           )}
         </div>
@@ -53,6 +55,7 @@ const Home = (props: { theme: any }) => {
               alt="downArrowDark icon"
               width={30}
               height={30}
+              style={{ objectFit: "contain"}}
             />
           </Link>
         ) : (
@@ -62,6 +65,7 @@ const Home = (props: { theme: any }) => {
               alt="downArrowLight icon"
               width={30}
               height={30}
+              style={{ objectFit: "contain" }}
             />
           </Link>
         )}
@@ -73,7 +77,7 @@ const Home = (props: { theme: any }) => {
             alt="darkGraphic icon"
             width={300}
             height={300}
-            layout="responsive"
+            style={{ objectFit: "contain"}}
           />
         ) : (
           <Image
@@ -81,7 +85,7 @@ const Home = (props: { theme: any }) => {
             alt="lightGraphic icon"
             width={300}
             height={300}
-            layout="responsive"
+            style={{ objectFit: "contain"}}
           />
         )}
       </div>

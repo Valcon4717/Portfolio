@@ -9,7 +9,7 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 5rem;
+    gap: 8rem;
     align-items: center;
     justify-content: center;
     padding-left: 10rem;
@@ -19,27 +19,41 @@
 .imageBlock {
     order: 1;
     align-self: center;
-}
-
-.imagePic {
-    width: 30.6875rem;
-    height: 36.5rem;
-    flex-shrink: 0;
+    height: auto;
+    width: 33rem;
 }
 
 .textBlock {
     order: 2;
     align-self: center;
-}
-
-.aboutText{
-}
-
-.graphic {
-    width: 18%; 
     height: auto;
+    width: 35rem;
+}
+
+.emoji {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1rem; 
+    padding-bottom: 1.2rem;
+}
+
+.subtitle {
+    color: var(--subtitle);
+    font-family: Roboto;
+    font-size: 1.05rem;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.graphicTop {
     position: absolute;
     top: 100%;
     left: 0;
 }
 
+.graphicBtm {
+    position: absolute;
+    top: 170%;
+    right: 0;
+}
