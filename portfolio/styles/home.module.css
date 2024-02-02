@@ -18,8 +18,8 @@
 .personIcon {
     position: relative;
     order: 2;
-    height: 40rem;
-    width: 40rem;
+    width: 100%; 
+    height: auto;
 }
 
 .titleBlock {
@@ -29,7 +29,6 @@
 
 .title {
     text-align: left;
-    font-size: 2rem;
     color: var(--on-background);
 }
 
@@ -43,7 +42,8 @@
 .emoji {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px; 
+    margin-left: 1rem; 
+    padding-bottom: 1.2rem;
 }
 
 .navigation {
@@ -51,8 +51,30 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 15px; 
+    bottom: 2rem; 
+}
+
+.navigation a {
+    cursor: pointer;
+}
+
+@keyframes expandShrink {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.navigation:hover {
+    animation: expandShrink 1s ease;
+    animation-iteration-count: 1; /* Ensures animation plays only once */
+    transform-origin: center;
+}
+
+.graphic {
+    position: absolute;
+    bottom: 0;
     left: 0;
-    right: 0;
-    height: 30px; 
 }
