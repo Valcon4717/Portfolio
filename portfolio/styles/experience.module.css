@@ -1,0 +1,5 @@
+.section {
+    min-height: 100vh;
+    place-items: center;
+    background-color: var(--background);
+}

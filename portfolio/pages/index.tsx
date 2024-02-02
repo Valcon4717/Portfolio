@@ -20,7 +20,7 @@ const Index = () => {
       <Navbar theme={theme} />
       <Home theme={theme}/>
       <About theme={theme}/>
-      <Experience />
+      <Experience theme={theme}/>
       <Resume />
       <Footer/>
     </div>

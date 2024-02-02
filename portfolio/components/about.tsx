@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "@/styles/about.module.css";
 import Image from "next/image";
+import styles from "@/styles/about.module.css";
 import graphicDark1 from "../public/Dark/graphic 1.2.svg";
 import graphicLight1 from "../public/Light/graphic 1.2.svg";
 import graphicDark2 from "../public/Dark/graphic 2.svg";
