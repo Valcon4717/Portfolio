@@ -3,3 +3,76 @@
     place-items: center;
     background-color: var(--background);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    padding-left: 10rem;
+    padding-right: 10rem;
+    place-items: center;
+}
+
+.title1, .title2, .title3, .title4 {
+    color: var(--on-background);
+}
+
+.subTitle1, .subTitle2, .subTitle3, .subTitle4 {
+    color: var(--primary);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.subtext1, .subtext2, .subtext3, .subtext4{
+    color: rgba(255, 255, 255, 0.60);
+}
+
+.item2 {
+    /* Adjust the width and height to allocate more space for the Spline components */
+    width: 100%; 
+    height: 55vh; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.item4 {
+    /* Adjust the width and height to allocate more space for the Spline components */
+    width: 100%; 
+    height: 50vh; 
+    overflow: hidden; 
+    position: relative; 
+    margin-right: 10rem;
+}
+
+ .item7{
+    /* Adjust the width and height to allocate more space for the Spline components */
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: aqua;
+}
+.item6 {
+    /* Adjust the width and height to allocate more space for the Spline components */
+    width: 50vw; 
+    height: 100%; 
+    overflow: hidden; 
+    position: relative; 
+    background-color: aqua;
+
+}
+.image1container, .image2container, .image3container, .image4container {
+    /* Adjust the width and height to fit the Spline components */
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.spline {
+    width: 100%; 
+    height: auto; 
+    position: relative;
+}

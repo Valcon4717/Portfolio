@@ -1,14 +1,106 @@
 import React from 'react';
-import styles from "@/styles/experience.module.css";
-
+import styles from '@/styles/experience.module.css';
+import Spline from '@splinetool/react-spline';
 
 const Experience = (props: { theme: any }) => {
   return (
     <div id="experience" className={`${styles.section} ${props.theme}`}>
-      <div className={styles.grid}> 
-        <h3>
-            Experience page
-        </h3>
+      <div className={styles.grid}>
+        <div className={styles.item1}>
+          <h4 className={styles.title1}>Teams iOS Intern</h4>
+          <div>
+            <h6 className={styles.subTitle1}>
+              Microsoft Software Engineering Internship
+            </h6>
+            <div className={`${styles.subtext1} ${'subtitle1'}`}>
+              As an intern on Microsoft&apos;s Teams team, I collaborated with
+              the team to develop innovative features for Teams on iOS,
+              integrating the platform&apos;s latest features and widgets to
+              enhance productivity. My role centered around utilizing Xcode and
+              Swift, coupled with a focus on UX design, under the mentorship of
+              experienced full-time employees.
+            </div>
+          </div>
+        </div>
+        <div className={styles.item2}>
+          <div className={styles.image1container}>
+            <Spline
+              scene="https://prod.spline.design/9siEaPPb3VL6u7Cx/scene.splinecode"
+              className={styles.spline}
+            />
+          </div>
+        </div>
+
+        <div className={styles.item4}>
+          <div className={styles.image2container}>
+            <Spline
+              scene="https://prod.spline.design/wgPeZrHikrrjmUnW/scene.splinecode"
+              className={styles.spline}
+            />
+          </div>
+        </div>
+        <div className={styles.item3}>
+          <h4 className={styles.title2}>Teams Mixed Reality Intern</h4>
+          <div>
+            <h6 className={styles.subTitle2}>Microsoft Explore Internship</h6>
+            <div className={`${styles.subtext2} ${'subtitle1'}`}>
+              As an intern on Microsoft&apos;s Teams Mixed Reality team, I
+              joined forces with two other interns to develop a web application
+              to improve remote collaboration. Our work, which involved using
+              React and TypeScript for the interface and Azure Storage for
+              database management, was nurtured under the guidance of an
+              experienced software engineer and program manager.
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.item5}>
+          <h4 className={styles.title3}>Program Manager</h4>
+          <div>
+            <h6 className={styles.subTitle3}>Bandit Game Studio</h6>
+            <div className={`${styles.subtext3} ${'subtitle1'}`}>
+              As Program Manager at Bandit Game Studio, I have been tasked to
+              lead the early development of our new website. My focus combines
+              leadership with technical insight, guiding a talented team as we
+              lay the groundwork for a user-centric, visually engaging platform.
+              We aim to showcase our unique offerings and create a space for
+              meaningful engagement with major industry players like Microsoft,
+              Riot, and Google. With much work ahead, we are excited about the
+              journey to transform our digital presence in the gaming industry.
+            </div>
+          </div>
+        </div>
+        <div className={styles.item6}>
+          <div className={styles.image3container}>
+            <Spline
+              scene="https://prod.spline.design/tG2VIGAN2DmGsiDE/scene.splinecode"
+              className={styles.spline}
+            />
+          </div>
+        </div>
+
+        <div className={styles.item7}>
+          <div className={styles.image4container}>
+            <Spline
+              scene="https://prod.spline.design/eEAQ4bHuKSCGhg-k/scene.splinecode"
+              className={styles.spline}
+            />
+          </div>
+        </div>
+        <div className={styles.item8}>
+          <h4 className={styles.title4}>Technical Operations Assistant</h4>
+          <div>
+            <h6 className={styles.subTitle4}>Undergraduate Assistant</h6>
+            <div className={`${styles.subtext4} ${'subtitle1'}`}>
+              As an Undergraduate Assistant, I enhanced user experiences in
+              educational spaces, providing technical support in auditoriums,
+              classrooms, and labs. I operated and instructed on maker space
+              equipment like 3D printers, laser engravers, and CNC machines.
+              Additionally, I conducted practical workshops for students and the
+              community, focusing on skill-building with these tools.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
