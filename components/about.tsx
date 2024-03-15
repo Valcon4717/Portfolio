@@ -1,12 +1,12 @@
-import React from "react";
-import Image from "next/image";
-import styles from "@/styles/about.module.css";
-import graphicDark1 from "../public/Dark/graphic 1.2.svg";
-import graphicLight1 from "../public/Light/graphic 1.2.svg";
-import graphicDark2 from "../public/Dark/graphic 2.svg";
-import graphicLight2 from "../public/Light/graphic 2.svg";
-import profilePic from "../public/ProfilePic.svg";
-import coffee from "../public/CoffeeLogo.svg";
+import React from 'react';
+import Image from 'next/image';
+import styles from '@/styles/about.module.css';
+import graphicDark1 from '../public/Dark/graphic 1.2.svg';
+import graphicLight1 from '../public/Light/graphic 1.2.svg';
+import graphicDark2 from '../public/Dark/graphic 2.svg';
+import graphicLight2 from '../public/Light/graphic 2.svg';
+import profilePic from '../public/ProfilePic.svg';
+import coffee from '../public/CoffeeLogo.svg';
 
 const About = (props: { theme: any }) => {
   return (
@@ -18,7 +18,7 @@ const About = (props: { theme: any }) => {
             alt="profilePic"
             width={600}
             height={600}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: 'contain' }}
           />
         </div>
 
@@ -37,23 +37,23 @@ const About = (props: { theme: any }) => {
             <p>
               Hi, I&apos;m Valeria, a third-year student at The University of
               Texas at El Paso with a deep passion for&nbsp;
-              <span style={{ color: "var(--primary)" }}>
+              <span style={{ color: 'var(--primary)' }}>
                 &nbsp;front-end development
               </span>
               &nbsp;and&nbsp;
-              <span style={{ color: "var(--primary)" }}>
+              <span style={{ color: 'var(--primary)' }}>
                 &nbsp;UI/UX design
               </span>
               . I&apos;ve developed a diverse skill set that includes&nbsp;
-              <span style={{ color: "var(--primary)" }}>
+              <span style={{ color: 'var(--primary)' }}>
                 Java, Python, TypeScript, C, Swift, HTML, CSS,
               </span>
               &nbsp;and&nbsp;
-              <span style={{ color: "var(--primary)" }}>SCSS,</span>
+              <span style={{ color: 'var(--primary)' }}>SCSS,</span>
               &nbsp;along with proficiency in tools like GitHub, Figma, and
               Xcode. My experience has been further enriched by internships
               at&nbsp;
-              <span style={{ color: "var(--primary)" }}>Microsoft,</span>
+              <span style={{ color: 'var(--primary)' }}>Microsoft,</span>
               &nbsp;where I&apos;ve embraced the challenge of complex front-end
               projects for apps and websites. <br />
               <br />I find my creative spark in nature, often rock climbing and
@@ -65,9 +65,9 @@ const About = (props: { theme: any }) => {
               it&apos;s time to study or unwind, you&apos;ll likely find me in a
               cozy coffee shop, sipping on a good cup of coffee. <br />
               <br />I am excited about the future of&nbsp;
-              <span style={{ color: "var(--primary)" }}>web</span>
+              <span style={{ color: 'var(--primary)' }}>web</span>
               &nbsp;and&nbsp;
-              <span style={{ color: "var(--primary)" }}>app development</span>
+              <span style={{ color: 'var(--primary)' }}>app development</span>
               &nbsp;and am always keen on exploring new technologies and design
               trends. Feel free to reach out if you&apos;re interested in
               discussing tech or potential collaborations or want to share your
@@ -77,13 +77,13 @@ const About = (props: { theme: any }) => {
         </div>
       </div>
       <div className={styles.graphicTop}>
-        {props.theme === "dark-mode" ? (
+        {props.theme === 'dark-mode' ? (
           <Image
             src={graphicDark1}
             alt="darkGraphic1 icon"
             width={300}
             height={300}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: 'contain' }}
           />
         ) : (
           <Image
@@ -91,18 +91,18 @@ const About = (props: { theme: any }) => {
             alt="lightGraphic1 icon"
             width={300}
             height={300}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: 'contain' }}
           />
         )}
       </div>
       <div className={styles.graphicBtm}>
-        {props.theme === "dark-mode" ? (
+        {props.theme === 'dark-mode' ? (
           <Image
             src={graphicDark2}
             alt="darkGraphic2 icon"
             width={300}
             height={300}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: 'contain' }}
           />
         ) : (
           <Image
@@ -110,12 +110,11 @@ const About = (props: { theme: any }) => {
             alt="lightGraphic2 icon"
             width={300}
             height={300}
-            style={{ objectFit: "contain" }}
+            style={{ objectFit: 'contain' }}
           />
         )}
       </div>
     </div>
-    
   );
 };
 

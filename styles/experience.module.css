@@ -3,3 +3,118 @@
     place-items: center;
     background-color: var(--background);
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
+    padding-bottom: 5rem;
+}
+
+.title1, .title2, .title3, .title4 {
+    color: var(--on-background);
+}
+
+.subTitle1, .subTitle2, .subTitle3, .subTitle4 {
+    color: var(--primary);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.subtext1, .subtext2, .subtext3, .subtext4{
+    color: var(--subtitle);
+}
+
+.text1 {
+    padding-left: 8rem;
+    z-index: 4000;
+}
+
+.iPhone {
+    width: 45vw; 
+    height: 40vh; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.text2 {
+    padding-right: 8rem;
+    text-align: right;
+}
+
+.macbook {
+    width: 45vw; 
+    height: 40vh; 
+    overflow: hidden; 
+    position: relative; 
+}
+
+.text3 {
+    padding-left: 8rem;
+}
+
+.monitorMac {
+    width: 45vw; 
+    height: 40vh; 
+    overflow: hidden; 
+    position: relative;
+
+}
+
+.text4 {
+    padding-right: 8rem;
+    text-align: right;
+}
+
+.printer {
+    width: 45vw; 
+    height: 40vh;  
+    overflow: hidden; 
+    position: relative; 
+}
+
+.image1container, .image2container, .image3container, .image4container {
+    width: 90%;
+    height: 100%;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.spline {
+    width: 100%; 
+    height: auto; 
+    position: relative;
+}
+
+.graphicTop {
+    position: absolute;
+    right: 0;
+    top: 200.4%;
+}
+
+.graphicmid1 {
+    position: absolute;
+    left: 0;
+    top: 220%;
+}
+
+.graphicmid2 {
+    position: absolute;
+    right: 0;
+    top: 257%;
+}
+
+.graphicmid3 {
+    position: absolute;
+    left: 0;
+    top: 295%;
+}
+
+.graphicBottom {
+    position: absolute;
+    right: 0;
+    top: 329.8%;
+}

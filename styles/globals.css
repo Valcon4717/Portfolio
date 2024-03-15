@@ -89,25 +89,25 @@ body{
     line-height: normal;
   }
 
-  subtitle1 {
+  .subtitle1 {
     font-size: 1rem;
     font-weight: 400;
     line-height: normal;
   }
 
-  subtitle2 {
+  .subtitle2 {
     font-size: 0.875rem;
     font-weight: 500;
     line-height: normal;
   }
 
-  body1 {
+  .body1 {
     font-size: 1rem;
     font-weight: 400;
     line-height: normal;
   }
 
-  body2 {
+  .body2 {
     font-size: 0.875rem;
     font-weight: 400;
     line-height: normal;
