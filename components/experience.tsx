@@ -1,12 +1,100 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import Image from 'next/image';
+import graphicDark1 from '../public/Dark/graphic 2.1.svg';
+import graphicLight1 from '../public/Light/graphic 2.1.svg';
+import graphicDark2 from '../public/Dark/graphic 3.svg';
+import graphicLight2 from '../public/Light/graphic 3.svg';
+import graphicDark3 from '../public/Dark/graphic 4.svg';
+import graphicLight3 from '../public/Light/graphic 4.svg';
+import graphicDark4 from '../public/Dark/graphic 5.svg';
+import graphicLight4 from '../public/Light/graphic 5.svg';
+import graphicDark5 from '../public/Dark/graphic 6.svg';
+import graphicLight5 from '../public/Light/graphic 6.svg';
 import styles from '@/styles/experience.module.css';
-import Spline from '@splinetool/react-spline';
+
+const Spline = React.lazy(() => import('@splinetool/react-spline'));
 
 const Experience = (props: { theme: any }) => {
   return (
     <div id="experience" className={`${styles.section} ${props.theme}`}>
+      <div className={styles.graphicTop}>
+        {props.theme === 'dark-mode' ? (
+          <Image
+            src={graphicDark1}
+            alt="darkGraphic1 icon"
+            width={300}
+            height={300}
+            style={{ objectFit: 'contain' }}
+          />
+        ) : (
+          <Image
+            src={graphicLight1}
+            alt="lightGraphic1 icon"
+            width={300}
+            height={300}
+            style={{ objectFit: 'contain' }}
+          />
+        )}
+      </div>
+      <div className={styles.graphicmid1}>
+        {props.theme === 'dark-mode' ? (
+          <Image
+            src={graphicDark2}
+            alt="darkGraphic2 icon"
+            width={230}
+            height={230}
+            style={{ objectFit: 'contain' }}
+          />
+        ) : (
+          <Image
+            src={graphicLight2}
+            alt="lightGraphic2 icon"
+            width={230}
+            height={230}
+            style={{ objectFit: 'contain' }}
+          />
+        )}
+      </div>
+      <div className={styles.graphicmid2}>
+        {props.theme === 'dark-mode' ? (
+          <Image
+            src={graphicDark3}
+            alt="darkGraphic3 icon"
+            width={280}
+            height={280}
+            style={{ objectFit: 'contain' }}
+          />
+        ) : (
+          <Image
+            src={graphicLight3}
+            alt="lightGraphic3 icon"
+            width={280}
+            height={280}
+            style={{ objectFit: 'contain' }}
+          />
+        )}
+      </div>
+      <div className={styles.graphicmid3}>
+        {props.theme === 'dark-mode' ? (
+          <Image
+            src={graphicDark4}
+            alt="darkGraphic4 icon"
+            width={280}
+            height={280}
+            style={{ objectFit: 'contain' }}
+          />
+        ) : (
+          <Image
+            src={graphicLight4}
+            alt="lightGraphic4 icon"
+            width={280}
+            height={280}
+            style={{ objectFit: 'contain' }}
+          />
+        )}
+      </div>
       <div className={styles.grid}>
-        <div className={styles.item1}>
+        <div className={styles.text1}>
           <h4 className={styles.title1}>Teams iOS Intern</h4>
           <div>
             <h6 className={styles.subTitle1}>
@@ -22,24 +110,28 @@ const Experience = (props: { theme: any }) => {
             </div>
           </div>
         </div>
-        <div className={styles.item2}>
+        <div className={styles.iPhone}>
           <div className={styles.image1container}>
-            <Spline
-              scene="https://prod.spline.design/9siEaPPb3VL6u7Cx/scene.splinecode"
-              className={styles.spline}
-            />
+            <Suspense fallback={<div>Loading Spline...</div>}>
+              <Spline
+                scene="https://draft.spline.design/hokwpdu5k4xpxAxm/scene.splinecode"
+                className={styles.spline}
+              />
+            </Suspense>
           </div>
         </div>
 
-        <div className={styles.item4}>
+        <div className={styles.macbook}>
           <div className={styles.image2container}>
-            <Spline
-              scene="https://prod.spline.design/wgPeZrHikrrjmUnW/scene.splinecode"
-              className={styles.spline}
-            />
+            <Suspense fallback={<div>Loading Spline...</div>}>
+              <Spline
+                scene="https://draft.spline.design/aW5RaTfe43FXOkfW/scene.splinecode"
+                className={styles.spline}
+              />
+            </Suspense>
           </div>
         </div>
-        <div className={styles.item3}>
+        <div className={styles.text2}>
           <h4 className={styles.title2}>Teams Mixed Reality Intern</h4>
           <div>
             <h6 className={styles.subTitle2}>Microsoft Explore Internship</h6>
@@ -54,7 +146,7 @@ const Experience = (props: { theme: any }) => {
           </div>
         </div>
 
-        <div className={styles.item5}>
+        <div className={styles.text3}>
           <h4 className={styles.title3}>Program Manager</h4>
           <div>
             <h6 className={styles.subTitle3}>Bandit Game Studio</h6>
@@ -70,24 +162,28 @@ const Experience = (props: { theme: any }) => {
             </div>
           </div>
         </div>
-        <div className={styles.item6}>
+        <div className={styles.monitorMac}>
           <div className={styles.image3container}>
-            <Spline
-              scene="https://prod.spline.design/tG2VIGAN2DmGsiDE/scene.splinecode"
-              className={styles.spline}
-            />
+            <Suspense fallback={<div>Loading Spline...</div>}>
+              <Spline
+                scene="https://draft.spline.design/bFxNmSitNlMsw7tk/scene.splinecode"
+                className={styles.spline}
+              />
+            </Suspense>
           </div>
         </div>
 
-        <div className={styles.item7}>
+        <div className={styles.printer}>
           <div className={styles.image4container}>
-            <Spline
-              scene="https://prod.spline.design/eEAQ4bHuKSCGhg-k/scene.splinecode"
-              className={styles.spline}
-            />
+            <Suspense fallback={<div>Loading Spline...</div>}>
+              <Spline
+                scene="https://draft.spline.design/5hzfse7VMn7dJHOs/scene.splinecode"
+                className={styles.spline}
+              />
+            </Suspense>
           </div>
         </div>
-        <div className={styles.item8}>
+        <div className={styles.text4}>
           <h4 className={styles.title4}>Technical Operations Assistant</h4>
           <div>
             <h6 className={styles.subTitle4}>Undergraduate Assistant</h6>
@@ -101,6 +197,25 @@ const Experience = (props: { theme: any }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.graphicBottom}>
+        {props.theme === 'dark-mode' ? (
+          <Image
+            src={graphicDark5}
+            alt="darkGraphic5 icon"
+            width={300}
+            height={300}
+            style={{ objectFit: 'contain' }}
+          />
+        ) : (
+          <Image
+            src={graphicLight5}
+            alt="lightGraphic5 icon"
+            width={300}
+            height={300}
+            style={{ objectFit: 'contain' }}
+          />
+        )}
       </div>
     </div>
   );
