@@ -45,15 +45,3 @@
     font-weight: 400;
     padding-top: 1rem;
 }
-
-.graphicTop {
-    position: absolute;
-    top: 100%;
-    left: 0;
-}
-
-.graphicBtm {
-    position: absolute;
-    top: 170%;
-    right: 0;
-}

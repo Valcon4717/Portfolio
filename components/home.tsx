@@ -6,8 +6,6 @@ import lightAvatar from "../public/Light/Avatar.svg";
 import wave from "../public/WaveHand.svg";
 import arrowDark from "../public/Dark/HomeDownArrow.svg";
 import arrowLight from "../public/Light/HomeDownArrow.svg";
-import darkGraphic from "../public/Dark/graphic 1.svg";
-import lightGraphic from "../public/Light/graphic 1.svg";
 import { Link } from "react-scroll";
 
 const Home = (props: { theme: any }) => {
@@ -68,25 +66,6 @@ const Home = (props: { theme: any }) => {
               style={{ objectFit: "contain" }}
             />
           </Link>
-        )}
-      </div>
-      <div className={styles.graphic}>
-        {props.theme === "dark-mode" ? (
-          <Image
-            src={darkGraphic}
-            alt="darkGraphic icon"
-            width={300}
-            height={300}
-            style={{ objectFit: "contain"}}
-          />
-        ) : (
-          <Image
-            src={lightGraphic}
-            alt="lightGraphic icon"
-            width={300}
-            height={300}
-            style={{ objectFit: "contain"}}
-          />
         )}
       </div>
     </div>

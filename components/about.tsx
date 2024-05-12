@@ -1,10 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/about.module.css';
-import graphicDark1 from '../public/Dark/graphic 1.2.svg';
-import graphicLight1 from '../public/Light/graphic 1.2.svg';
-import graphicDark2 from '../public/Dark/graphic 2.svg';
-import graphicLight2 from '../public/Light/graphic 2.svg';
 import profilePic from '../public/ProfilePic.svg';
 import coffee from '../public/CoffeeLogo.svg';
 
@@ -75,44 +71,6 @@ const About = (props: { theme: any }) => {
             </p>
           </div>
         </div>
-      </div>
-      <div className={styles.graphicTop}>
-        {props.theme === 'dark-mode' ? (
-          <Image
-            src={graphicDark1}
-            alt="darkGraphic1 icon"
-            width={300}
-            height={300}
-            style={{ objectFit: 'contain' }}
-          />
-        ) : (
-          <Image
-            src={graphicLight1}
-            alt="lightGraphic1 icon"
-            width={300}
-            height={300}
-            style={{ objectFit: 'contain' }}
-          />
-        )}
-      </div>
-      <div className={styles.graphicBtm}>
-        {props.theme === 'dark-mode' ? (
-          <Image
-            src={graphicDark2}
-            alt="darkGraphic2 icon"
-            width={300}
-            height={300}
-            style={{ objectFit: 'contain' }}
-          />
-        ) : (
-          <Image
-            src={graphicLight2}
-            alt="lightGraphic2 icon"
-            width={300}
-            height={300}
-            style={{ objectFit: 'contain' }}
-          />
-        )}
       </div>
     </div>
   );
