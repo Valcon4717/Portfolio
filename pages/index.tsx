@@ -1,5 +1,4 @@
 import Footer from "@/components/footer";
-import About from "@/components/about";
 import Experience from "@/components/experience";
 import Resume from "@/components/resume";
 import Navbar from "@/components/navbar";
@@ -8,7 +7,6 @@ import ThemeSwitch from "@/components/themeSwitch";
 import Home from "@/components/home";
 
 const Index = () => {
-  // state variable theme initialized to "dark-mode"
   const [theme, setTheme] = useState("dark-mode");
 
   return (
@@ -19,7 +17,6 @@ const Index = () => {
       />
       <Navbar theme={theme} />
       <Home theme={theme}/>
-      <About theme={theme}/>
       <Experience theme={theme}/>
       <Resume />
       <Footer/>

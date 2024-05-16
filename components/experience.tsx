@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from '@/styles/experience.module.css';
 import Image from 'next/image';
-import iphone from '@/public/Phone.svg';
-import macbook from '@/public/Mac.svg';
-import monitorMac from '@/public/PC.svg';
-import printer from '@/public/Printer.svg';
+import iphone from '@/public/iphone.svg';
+import macbook from '@/public/macbook.svg';
+import monitorMac from '@/public/mac.svg';
+import printer from '@/public/3Dprinter.svg';
 
 const Experience = (props: { theme: any }) => {
   return (

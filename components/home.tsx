@@ -1,27 +1,42 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "@/styles/home.module.css";
 import darkAvatar from "../public/Dark/Avatar.svg";
 import lightAvatar from "../public/Light/Avatar.svg";
-import wave from "../public/WaveHand.svg";
 import arrowDark from "../public/Dark/HomeDownArrow.svg";
 import arrowLight from "../public/Light/HomeDownArrow.svg";
 import { Link } from "react-scroll";
+import { TypewriterEffectSmooth } from "./typewriter-effect";
+
 
 const Home = (props: { theme: any }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+  
+  const words = [
+    {
+      text: "Hello,",
+    },
+    {
+      text: "I'm",
+    },
+    {
+      text: "Valeria",
+    },
+    {
+      text: "👋🏼", 
+    },
+  ];
+
   return (
     <div id="home" className={`${styles.section} ${props.theme}`}>
       <div className={styles.grid}>
         <div className={styles.titleBlock}>
           <div className={`${styles.title} ${"main-title"}`}>
-            Hello, I&apos;m Valeria
-            <Image
-              src={wave}
-              alt="wave"
-              width={60}
-              height={60}
-              className={styles.emoji}
-            />
+          {isClient && <TypewriterEffectSmooth words={words} />}
           </div>
           <h5 className={styles.subtitle}>software developer</h5>
         </div>
@@ -47,7 +62,7 @@ const Home = (props: { theme: any }) => {
       </div>
       <div className={styles.navigation}>
         {props.theme === "dark-mode" ? (
-          <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
+          <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>
             <Image
               src={arrowDark}
               alt="downArrowDark icon"
@@ -57,7 +72,7 @@ const Home = (props: { theme: any }) => {
             />
           </Link>
         ) : (
-          <Link to="about" spy={true} smooth={true} offset={-50} duration={500}>
+          <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>
             <Image
               src={arrowLight}
               alt="downArrowLight icon"

@@ -12,6 +12,7 @@
     flex-direction: column;
     width: 100%;
     height: 100%;
+    padding-bottom: 1rem;
 }
 
 .row1, .row2, .row3, .row4 {
@@ -19,7 +20,8 @@
     justify-content: space-evenly;
     align-items: center;
     width: 80%;
-    height: 20rem;
+    height: 25rem;
+    gap: 5rem;
 }
 
 .title1, .title2, .title3, .title4 {
@@ -29,7 +31,7 @@
 .subTitle1, .subTitle2, .subTitle3, .subTitle4 {
     color: var(--primary);
     padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 0.5rem;
 }
 
 .subtext1, .subtext2, .subtext3, .subtext4{
@@ -40,11 +42,13 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: aquamarine;
+    width: 100%;
+    height: 100%;
 }
 
-.iPhone, .macbook, .monitorMac, .printer {
+.iPhone, .macbook, .printer, .monitorMac {
     width: 100%;
+    height: 100%;
 }
 
 .image1container, .image2container, .image3container, .image4container {
@@ -52,5 +56,5 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: antiquewhite;
+    height: 100%;
 }
