@@ -35,7 +35,7 @@ const Experience = (props: { theme: any }) => {
         </div>
 
         <div className={styles.row2}>
-          <div className={styles.macbook}>
+        <div className={styles.macbook}>
             <div className={styles.image2container}>
               <Image src={macbook} alt="Macbook" />
             </div>
@@ -58,10 +58,37 @@ const Experience = (props: { theme: any }) => {
 
         <div className={styles.row3}>
           <div className={styles.text3}>
-            <h4 className={styles.title3}>Program Manager</h4>
+            <h4 className={styles.title3}>Technical Operations Assistant</h4>
             <div>
-              <h6 className={styles.subTitle3}>Bandit Game Studio</h6>
+              <h6 className={styles.subTitle3}>Undergraduate Assistant</h6>
               <div className={`${styles.subtext3} ${'subtitle1'}`}>
+                As an Undergraduate Assistant, I enhanced user experiences in
+                educational spaces, providing technical support in auditoriums,
+                classrooms, and labs. I operated and instructed on maker space
+                equipment like 3D printers, laser engravers, and CNC machines.
+                Additionally, I conducted practical workshops for students and
+                the community, focusing on skill-building with these tools.
+              </div>
+            </div>
+          </div>
+          <div className={styles.printer}>
+            <div className={styles.image4container}>
+              <Image src={printer} alt="Printer" />
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.row4}>
+        <div className={styles.monitorMac}>
+            <div className={styles.image3container}>
+              <Image src={monitorMac} alt="Monitor Mac" />
+            </div>
+          </div>
+          <div className={styles.text4}>
+            <h4 className={styles.title4}>Program Manager</h4>
+            <div>
+              <h6 className={styles.subTitle4}>Bandit Game Studio</h6>
+              <div className={`${styles.subtext4} ${'subtitle1'}`}>
                 As Program Manager at Bandit Game Studio, I have been tasked to
                 lead the early development of our new website. My focus combines
                 leadership with technical insight, guiding a talented team as we
@@ -71,33 +98,6 @@ const Experience = (props: { theme: any }) => {
                 Microsoft, Riot, and Google. With much work ahead, we are
                 excited about the journey to transform our digital presence in
                 the gaming industry.
-              </div>
-            </div>
-          </div>
-          <div className={styles.monitorMac}>
-            <div className={styles.image3container}>
-              <Image src={monitorMac} alt="Monitor Mac" />
-            </div>
-          </div>
-        </div>
-
-        <div className={styles.row4}>
-          <div className={styles.printer}>
-            <div className={styles.image4container}>
-              <Image src={printer} alt="Printer" />
-            </div>
-          </div>
-          <div className={styles.text4}>
-            <h4 className={styles.title4}>Technical Operations Assistant</h4>
-            <div>
-              <h6 className={styles.subTitle4}>Undergraduate Assistant</h6>
-              <div className={`${styles.subtext4} ${'subtitle1'}`}>
-                As an Undergraduate Assistant, I enhanced user experiences in
-                educational spaces, providing technical support in auditoriums,
-                classrooms, and labs. I operated and instructed on maker space
-                equipment like 3D printers, laser engravers, and CNC machines.
-                Additionally, I conducted practical workshops for students and
-                the community, focusing on skill-building with these tools.
               </div>
             </div>
           </div>

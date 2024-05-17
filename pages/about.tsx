@@ -1,20 +1,21 @@
 // pages/about.tsx
-import React, { useState } from 'react';
+import React from 'react';
 import Image from 'next/image';
 import Navbar from '@/components/navbar';
 import ThemeSwitch from '@/components/themeSwitch';
 import Footer from "@/components/footer";
+import { useTheme } from '../themeContext';
 import styles from '@/styles/about.module.css';
 import profilePic from '../public/ProfilePic.svg';
 import coffee from '../public/CoffeeLogo.svg';
 
 const About = () => {
-  const [theme, setTheme] = useState("dark-mode");
+  const { theme, setTheme } = useTheme();
 
   return (
     <div className={theme}>
       <ThemeSwitch
-        theme={theme} 
+        theme={theme}
         toggleTheme={() => setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")}
       />
       <Navbar theme={theme} />

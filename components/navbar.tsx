@@ -27,15 +27,15 @@ const Navbar = (props: { theme: any }) => {
 
   return (
     <nav className={`${styles.box} ${isScrolled ? styles.scrolled : ''} ${props.theme}`}>
-      <h4 className={`${styles.title}`}>
+      <h6 className={`${styles.title}`}>
         <div onClick={handleNameClick} style={{ cursor: 'pointer' }}>
           Valeria Contreras
         </div>
-      </h4>
-      <h5 className={`${styles.navItems}`}>
-        <Link href="/about">About</Link>
-        <a href="/path/to/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-      </h5>
+      </h6>
+      <h6 className={`${styles.navItems}`}>
+        <Link href="/about">about</Link>
+        <a href="/path/to/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+      </h6>
     </nav>
   );
 };
