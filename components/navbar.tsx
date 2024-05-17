@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-scroll';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from '@/styles/navbar.module.css';
 
 const Navbar = (props: { theme: any }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter(); 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -12,20 +14,28 @@ const Navbar = (props: { theme: any }) => {
     };
 
     window.addEventListener('scroll', handleScroll);
-
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const handleNameClick = () => {
+    if (router.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      router.push('/');
+    }
+  };
+
   return (
     <nav className={`${styles.box} ${isScrolled ? styles.scrolled : ''} ${props.theme}`}>
-      <h4 className={`${styles.title}`}>
-        <Link to="home" spy={true} smooth={true} duration={500}>Valeria Contreras</Link>
-      </h4>
-      <h5 className={`${styles.navItems}`}>
-        <Link to="about" spy={true} smooth={true} offset={-50}  duration={500}>about</Link>
-        <Link to="experience" spy={true} smooth={true} offset={-50} duration={500}>experience</Link>
-        <Link to="resume" spy={true} smooth={true} duration={500}>resume</Link>
-      </h5>
+      <h6 className={`${styles.title}`}>
+        <div onClick={handleNameClick} style={{ cursor: 'pointer' }}>
+          Valeria Contreras
+        </div>
+      </h6>
+      <h6 className={`${styles.navItems}`}>
+        <Link href="/about">about</Link>
+        <a href="/path/to/resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+      </h6>
     </nav>
   );
 };

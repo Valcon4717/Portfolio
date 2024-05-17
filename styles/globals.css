@@ -32,10 +32,12 @@ body{
     --on-error: #000000;
     --themeButton: #E9EAF0;
     --subtitle: rgba(227, 227, 227, 0.60);
+    --scrollbar-bg: #121212;
+    --scrollbar-thumb-bg: #555;  
   }
 
   .light-mode {
-    --primary: #6200EE ;
+    --primary: #6200EE;
     --primary-varient: #3700B3;
     --secondary: #03DAC6;
     --secondary-varient: #018786;
@@ -49,6 +51,8 @@ body{
     --on-error: #FFFFFF;
     --themeButton: #24272C;
     --subtitle: rgba(0, 0, 0, 0.60);
+    --scrollbar-bg: #F8F8FF;
+    --scrollbar-thumb-bg: #888;
   }
 
   /* Not Used */
@@ -137,6 +141,34 @@ body{
     font-size: 3.75rem;
     font-weight: 300;
     line-height: normal;
+  }
+
+  .light-mode::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  .light-mode::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+  }
+  
+  .light-mode::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    border-radius: 1rem;
+    border: 2px solid var(--scrollbar-bg);
+  }
+
+  .dark-mode::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  
+  .dark-mode::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+  }
+  
+  .dark-mode::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg);
+    border-radius: 1rem;
+    border: 2px solid var(--scrollbar-bg);
   }
 
 }

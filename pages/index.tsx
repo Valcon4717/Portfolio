@@ -1,31 +1,31 @@
 import Footer from "@/components/footer";
-import About from "@/components/about";
 import Experience from "@/components/experience";
-import Resume from "@/components/resume";
 import Navbar from "@/components/navbar";
-import { useState } from "react";
+import { useEffect } from "react";
+import { useTheme } from '../themeContext'; // Ensure correct path
 import ThemeSwitch from "@/components/themeSwitch";
 import Home from "@/components/home";
 
 const Index = () => {
-  // state variable theme initialized to "dark-mode"
-  const [theme, setTheme] = useState("dark-mode");
+  const { theme, setTheme } = useTheme();
+
+  const toggleTheme = () => {
+    setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode");
+  };
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <div>
-      <ThemeSwitch
-        theme={theme} 
-        toggleTheme={() => setTheme(theme === "dark-mode" ? "light-mode" : "dark-mode")}
-      />
+      <ThemeSwitch theme={theme} toggleTheme={toggleTheme} />
       <Navbar theme={theme} />
       <Home theme={theme}/>
-      <About theme={theme}/>
       <Experience theme={theme}/>
-      <Resume />
       <Footer/>
     </div>
   );
 };
 
 export default Index;
-

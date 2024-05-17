@@ -14,7 +14,7 @@
 }
 
 .scrolled {
-  box-shadow: 0em 4px 12px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0em 4px 12px 5px rgba(0, 0, 0, 0.1);
 }
 
 .title {
