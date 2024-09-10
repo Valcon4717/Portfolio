@@ -25,6 +25,20 @@
   width: 80%;
   height: 25rem;
   gap: 5rem;
+  margin-bottom: 3rem;
+  background: var(--card-background);
+  border-radius: 1rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  outline: 1px solid var(--card-outline);
+  transition: transform 0.3s ease;
+}
+
+.row1:hover,
+.row2:hover,
+.row3:hover,
+.row4:hover {
+  transform: scale(1.02); 
 }
 
 .title1,
