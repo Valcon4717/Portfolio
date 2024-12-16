@@ -47,15 +47,15 @@ body{
     --surface: #F8F8FF;
     --error: #B00020;
     --on-primary: #FFFFFF;
-    --on-secondary: #000000;
-    --on-background: #000000;
-    --on-surface: #000000;
+    --on-secondary: #121212;
+    --on-background: #121212;
+    --on-surface: #121212;
     --on-error: #FFFFFF;
     --themeButton: #24272C;
     --subtitle: rgba(0, 0, 0, 0.60);
     --scrollbar-bg: #F8F8FF;
     --scrollbar-thumb-bg: #888;
-    --card-background: linear-gradient(0deg, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 0) 100%), #F0F0FF;
+    --card-background: linear-gradient(0deg, rgba(18, 18, 18, 0) 0%, rgba(18, 18, 18, 0) 100%), #f0f0ff00;
     --card-outline: rgb(223, 223, 250);
   }
 
