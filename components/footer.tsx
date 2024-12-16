@@ -1,12 +1,11 @@
 import React from 'react';
+import styles from '@/styles/footer.module.css';
 
-const Footer = () => {
+const Footer = (props: { theme: any }) => {
     return (
-      <section>
-        <h3>
-            Footer
-        </h3>
-      </section>
+        <footer className={`${styles.box} ${props.theme}`}>
+            <p className={styles.text}>© 2023 Valeria Contreras. All rights reserved.</p>
+        </footer>
     );
 };
 

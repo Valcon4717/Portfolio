@@ -1,23 +1,36 @@
-import React from 'react';
-import styles from '@/styles/experience.module.css';
-import Image from 'next/image';
-import iphone from '@/public/iphone.svg';
-import macbook from '@/public/macbook.svg';
-import monitorMac from '@/public/mac.svg';
-import printer from '@/public/3Dprinter.svg';
+import React from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import styles from "@/styles/experience.module.css";
+import Image from "next/image";
+import iphone from "@/public/iphone.svg";
+import macbook from "@/public/macbook.svg";
+import monitorMac from "@/public/mac.svg";
+import printer from "@/public/3Dprinter.svg";
 
 const Experience = (props: { theme: any }) => {
+  const { scrollYProgress } = useScroll();
+
+  const scale1 = useTransform(scrollYProgress, [0, 0.3], [0.1, 1]);
+  const scale2 = useTransform(scrollYProgress, [0.25, 0.5], [0.1, 1]);
+  const scale3 = useTransform(scrollYProgress, [0.45, 0.7], [0.1, 1]);
+  const scale4 = useTransform(scrollYProgress, [0.65, 0.9], [0.1, 1]);
+
   return (
     <div id="experience" className={`${styles.section} ${props.theme}`}>
       <div className={styles.rowHolder}>
-        <div className={styles.row1}>
+        <motion.div
+          style={{ scale: scale1 }}
+          className={styles.row1}
+          whileHover={{ scale: 1.03 }}
+          transition={{ type: "spring", stiffness: 300 }} // Added transition
+        >
           <div className={styles.text1}>
             <h4 className={styles.title1}>Teams iOS Intern</h4>
             <div>
               <h6 className={styles.subTitle1}>
                 Microsoft Software Engineering Internship
               </h6>
-              <div className={`${styles.subtext1} ${'subtitle1'}`}>
+              <div className={`${styles.subtext1} ${"subtitle1"}`}>
                 As an intern on Microsoft&apos;s Teams team, I collaborated with
                 the team to develop innovative features for Teams on iOS,
                 integrating the platform&apos;s latest features and widgets to
@@ -32,10 +45,14 @@ const Experience = (props: { theme: any }) => {
               <Image src={iphone} alt="iPhone" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={styles.row2}>
-        <div className={styles.macbook}>
+        <motion.div
+          style={{ scale: scale2 }}
+          className={styles.row2}
+          whileHover={{ scale: 1.03 }}
+        >
+          <div className={styles.macbook}>
             <div className={styles.image2container}>
               <Image src={macbook} alt="Macbook" />
             </div>
@@ -44,7 +61,7 @@ const Experience = (props: { theme: any }) => {
             <h4 className={styles.title2}>Teams Mixed Reality Intern</h4>
             <div>
               <h6 className={styles.subTitle2}>Microsoft Explore Internship</h6>
-              <div className={`${styles.subtext2} ${'subtitle1'}`}>
+              <div className={`${styles.subtext2} ${"subtitle1"}`}>
                 As an intern on Microsoft&apos;s Teams Mixed Reality team, I
                 joined forces with two other interns to develop a web
                 application to improve remote collaboration. Our work, which
@@ -54,14 +71,18 @@ const Experience = (props: { theme: any }) => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={styles.row3}>
+        <motion.div
+          style={{ scale: scale3 }}
+          className={styles.row3}
+          whileHover={{ scale: 1.03 }}
+        >
           <div className={styles.text3}>
             <h4 className={styles.title3}>Technical Operations Assistant</h4>
             <div>
               <h6 className={styles.subTitle3}>Undergraduate Assistant</h6>
-              <div className={`${styles.subtext3} ${'subtitle1'}`}>
+              <div className={`${styles.subtext3} ${"subtitle1"}`}>
                 As an Undergraduate Assistant, I enhanced user experiences in
                 educational spaces, providing technical support in auditoriums,
                 classrooms, and labs. I operated and instructed on maker space
@@ -76,10 +97,14 @@ const Experience = (props: { theme: any }) => {
               <Image src={printer} alt="Printer" />
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={styles.row4}>
-        <div className={styles.monitorMac}>
+        <motion.div
+          style={{ scale: scale4 }}
+          className={styles.row4}
+          whileHover={{ scale: 1.03 }}
+        >
+          <div className={styles.monitorMac}>
             <div className={styles.image3container}>
               <Image src={monitorMac} alt="Monitor Mac" />
             </div>
@@ -88,7 +113,7 @@ const Experience = (props: { theme: any }) => {
             <h4 className={styles.title4}>Program Manager</h4>
             <div>
               <h6 className={styles.subTitle4}>Bandit Game Studio</h6>
-              <div className={`${styles.subtext4} ${'subtitle1'}`}>
+              <div className={`${styles.subtext4} ${"subtitle1"}`}>
                 As Program Manager at Bandit Game Studio, I have been tasked to
                 lead the early development of our new website. My focus combines
                 leadership with technical insight, guiding a talented team as we
@@ -101,7 +126,7 @@ const Experience = (props: { theme: any }) => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
