@@ -40,6 +40,9 @@ const Experience = (props: { theme: any }) => {
               into the Queues app. Gained hands-on experience in testing, code reviews, bug bashes, and shipping features, 
               collaborating closely with seasoned engineers.
               </div>
+              <div className={`${styles.date1} ${"subtitle1"}`}>
+              May 2024 - Aug 2024
+              </div>
             </div>
           </div>
         </motion.div>
@@ -63,6 +66,9 @@ const Experience = (props: { theme: any }) => {
                 Collaborated on developing innovative Teams features for iOS, integrating the platform&apos;s latest widgets to boost 
                 productivity. Focused on UX design using Xcode and Swift, working under the guidance of experienced mentors.
               </div>
+              <div className={`${styles.date2} ${"subtitle1"}`}>
+              May 2023 - Aug 2023
+              </div>
             </div>
           </div>
         </motion.div>
@@ -85,6 +91,9 @@ const Experience = (props: { theme: any }) => {
               <div className={`${styles.subtext3} ${"subtitle1"}`}>
               Designed and built a web application to enhance remote team collaboration using React, TypeScript, and Figma. Collaborated 
               with two interns under the guidance of a software engineer and program manager.
+              </div>
+              <div className={`${styles.date3} ${"subtitle1"}`}>
+              May 2022 - Aug 2022
               </div>
             </div>
           </div>
@@ -110,6 +119,9 @@ const Experience = (props: { theme: any }) => {
               engravers, and CNC machines. Led technical and DIY workshops to teach students and the community how to use maker space tools.
               </div>
             </div>
+            <div className={`${styles.date4} ${"subtitle1"}`}>
+              Aug 2021 - May 2022
+              </div>
           </div>
         </motion.div>
       </div>
