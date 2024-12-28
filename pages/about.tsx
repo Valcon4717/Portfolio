@@ -47,7 +47,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Footer theme={theme} />
     </div>
   );
 };

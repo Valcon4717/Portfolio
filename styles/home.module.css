@@ -8,16 +8,34 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 5rem;
   align-items: center;
   justify-content: center;
-  padding-left: 10rem;
-  padding-right: 10rem;
+  gap: 2rem;
+  padding-left: 20rem;
+  overflow: hidden;
 }
 
 .titleBlock {
   order: 1;
-  align-self: center;
+}
+
+.personIcon {
+  order: 2;
+  width: 100%;
+  height: auto;
+  animation: slideFadeInRight 1.5s ease-out forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.1, 0.2, 1);
+}
+
+@keyframes slideFadeInRight {
+  from {
+      opacity: 0;
+      transform: translateX(50%);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
 }
 
 .title {
@@ -65,26 +83,6 @@
 
 .navigation:hover {
   animation: expandShrink 1s ease;
-  animation-iteration-count: 1; /* Ensures animation plays only once */
+  animation-iteration-count: 1;
   transform-origin: center;
-}
-
-@keyframes slideFadeInRight {
-    from {
-        opacity: 0;
-        transform: translateX(50%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.personIcon {
-    position: relative;
-    order: 2;
-    width: 100%;
-    height: auto;
-    animation: slideFadeInRight 1.5s ease-out forwards;
-    animation-timing-function: cubic-bezier(0.2, 0.1, 0.2, 1);
 }

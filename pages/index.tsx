@@ -20,10 +20,10 @@ const Index = () => {
   return (
     <div>
       <ThemeSwitch theme={theme} toggleTheme={toggleTheme} />
-      <Navbar theme={theme} />
+      <Navbar theme={theme}/>
       <Home theme={theme}/>
       <Experience theme={theme}/>
-      <Footer/>
+      <Footer theme={theme}/>
     </div>
   );
 };

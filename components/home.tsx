@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import styles from '@/styles/home.module.css';
-import darkAvatar from '../public/Dark/Avatar.svg';
-import lightAvatar from '../public/Light/Avatar.svg';
+import avatar3D from '../public/avatare3D.png';
 import arrowDark from '../public/Dark/HomeDownArrow.svg';
 import arrowLight from '../public/Light/HomeDownArrow.svg';
 import { Link } from 'react-scroll';
@@ -41,23 +40,7 @@ const Home = (props: { theme: any }) => {
           </div>
         </div>
         <div className={styles.personIcon}>
-          {props.theme === 'dark-mode' ? (
-            <Image
-              src={darkAvatar}
-              alt="darkAvatar icon"
-              width={800}
-              height={800}
-              style={{ objectFit: 'contain' }}
-            />
-          ) : (
-            <Image
-              src={lightAvatar}
-              alt="lightAvatar icon"
-              width={800}
-              height={800}
-              style={{ objectFit: 'contain' }}
-            />
-          )}
+          <Image src={avatar3D} alt="avatar3D icon"  style={{ objectFit: 'contain', width: '80%', height: 'auto'}}  />
         </div>
       </div>
       <div className={styles.navigation}>

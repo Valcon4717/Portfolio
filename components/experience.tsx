@@ -2,10 +2,10 @@ import React from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "@/styles/experience.module.css";
 import Image from "next/image";
-import iphone from "@/public/iphone.svg";
-import macbook from "@/public/macbook.svg";
-import monitorMac from "@/public/mac.svg";
-import printer from "@/public/3Dprinter.svg";
+import TVEmac from "@/public/TVEmac.svg";
+import iOSapp from "@/public/ios.svg";
+import mixedMac from "@/public/mixed.svg";
+import printer from "@/public/3dprinter.svg";
 
 const Experience = (props: { theme: any }) => {
   const { scrollYProgress } = useScroll();
@@ -18,113 +18,110 @@ const Experience = (props: { theme: any }) => {
   return (
     <div id="experience" className={`${styles.section} ${props.theme}`}>
       <div className={styles.rowHolder}>
+        {/* Card 1*/}
         <motion.div
           style={{ scale: scale1 }}
           className={styles.row1}
-          whileHover={{ scale: 1.03 }}
-          transition={{ type: "spring", stiffness: 300 }} // Added transition
         >
-          <div className={styles.text1}>
-            <h4 className={styles.title1}>Teams iOS Intern</h4>
-            <div>
-              <h6 className={styles.subTitle1}>
-                Microsoft Software Engineering Internship
-              </h6>
-              <div className={`${styles.subtext1} ${"subtitle1"}`}>
-                As an intern on Microsoft&apos;s Teams team, I collaborated with
-                the team to develop innovative features for Teams on iOS,
-                integrating the platform&apos;s latest features and widgets to
-                enhance productivity. My role centered around utilizing Xcode
-                and Swift, coupled with a focus on UX design, under the
-                mentorship of experienced full-time employees.
-              </div>
+           <div className={styles.TVEmac}>
+            <div className={styles.image1container}>
+              <Image src={TVEmac} alt="TVEmac" />
             </div>
           </div>
-          <div className={styles.iPhone}>
-            <div className={styles.image1container}>
-              <Image src={iphone} alt="iPhone" />
+          <div className={styles.cardNum}>01 | SOFTWARE ENGINEER INTERN</div>
+          <div className={styles.text1}>
+            <h4 className={styles.title1}>Teams Enterprise Voice</h4>
+            <div>
+              <h6 className={styles.subTitle1}>
+                Microsoft
+              </h6>
+              <div className={`${styles.subtext1} ${"subtitle1"}`}>
+              Contributed to a new product by enhancing key settings and initiating integration of the Copilot Recap feature 
+              into the Queues app. Gained hands-on experience in testing, code reviews, bug bashes, and shipping features, 
+              collaborating closely with seasoned engineers.
+              </div>
+              <div className={`${styles.date1} ${"subtitle1"}`}>
+              May 2024 - Aug 2024
+              </div>
             </div>
           </div>
         </motion.div>
 
+        {/* Card 2 */}
         <motion.div
           style={{ scale: scale2 }}
           className={styles.row2}
-          whileHover={{ scale: 1.03 }}
         >
-          <div className={styles.macbook}>
+          <div className={styles.iOSapp}>
             <div className={styles.image2container}>
-              <Image src={macbook} alt="Macbook" />
+              <Image src={iOSapp} alt="iOSapp" />
             </div>
           </div>
+          <div className={styles.cardNum}>02 | SOFTWARE ENGINEER INTERN</div>
           <div className={styles.text2}>
-            <h4 className={styles.title2}>Teams Mixed Reality Intern</h4>
+            <h4 className={styles.title2}>Teams iOS</h4>
             <div>
-              <h6 className={styles.subTitle2}>Microsoft Explore Internship</h6>
+              <h6 className={styles.subTitle2}>Microsoft</h6>
               <div className={`${styles.subtext2} ${"subtitle1"}`}>
-                As an intern on Microsoft&apos;s Teams Mixed Reality team, I
-                joined forces with two other interns to develop a web
-                application to improve remote collaboration. Our work, which
-                involved using React and TypeScript for the interface and Azure
-                Storage for database management, was nurtured under the guidance
-                of an experienced software engineer and program manager.
+                Collaborated on developing innovative Teams features for iOS, integrating the platform&apos;s latest widgets to boost 
+                productivity. Focused on UX design using Xcode and Swift, working under the guidance of experienced mentors.
+              </div>
+              <div className={`${styles.date2} ${"subtitle1"}`}>
+              May 2023 - Aug 2023
               </div>
             </div>
           </div>
         </motion.div>
 
+        {/* Card 3 */}
         <motion.div
           style={{ scale: scale3 }}
           className={styles.row3}
-          whileHover={{ scale: 1.03 }}
         >
-          <div className={styles.text3}>
-            <h4 className={styles.title3}>Technical Operations Assistant</h4>
-            <div>
-              <h6 className={styles.subTitle3}>Undergraduate Assistant</h6>
-              <div className={`${styles.subtext3} ${"subtitle1"}`}>
-                As an Undergraduate Assistant, I enhanced user experiences in
-                educational spaces, providing technical support in auditoriums,
-                classrooms, and labs. I operated and instructed on maker space
-                equipment like 3D printers, laser engravers, and CNC machines.
-                Additionally, I conducted practical workshops for students and
-                the community, focusing on skill-building with these tools.
-              </div>
+          <div className={styles.mixedMac}>
+            <div className={styles.image4container}>
+              <Image src={mixedMac} alt="mixedMac" />
             </div>
           </div>
-          <div className={styles.printer}>
-            <div className={styles.image4container}>
-              <Image src={printer} alt="Printer" />
+          <div className={styles.cardNum}>03 | EXPLORE INTERN</div>
+          <div className={styles.text3}>
+            <h4 className={styles.title3}>Teams Mesh</h4>
+            <div>
+              <h6 className={styles.subTitle3}>Microsoft</h6>
+              <div className={`${styles.subtext3} ${"subtitle1"}`}>
+              Designed and built a web application to enhance remote team collaboration using React, TypeScript, and Figma. Collaborated 
+              with two interns under the guidance of a software engineer and program manager.
+              </div>
+              <div className={`${styles.date3} ${"subtitle1"}`}>
+              May 2022 - Aug 2022
+              </div>
             </div>
           </div>
         </motion.div>
 
+        {/* Card 4 */}
         <motion.div
           style={{ scale: scale4 }}
           className={styles.row4}
-          whileHover={{ scale: 1.03 }}
         >
-          <div className={styles.monitorMac}>
+          <div className={styles.printer}>
             <div className={styles.image3container}>
-              <Image src={monitorMac} alt="Monitor Mac" />
+              <Image src={printer} alt="printer" />
             </div>
           </div>
+          <div className={styles.cardNum}>04 | UNDERGRADUATE ASSISTANT</div>
           <div className={styles.text4}>
-            <h4 className={styles.title4}>Program Manager</h4>
+            <h4 className={styles.title4}>Technical Operations Assistant</h4>
             <div>
-              <h6 className={styles.subTitle4}>Bandit Game Studio</h6>
+              <h6 className={styles.subTitle4}>UTEP</h6>
               <div className={`${styles.subtext4} ${"subtitle1"}`}>
-                As Program Manager at Bandit Game Studio, I have been tasked to
-                lead the early development of our new website. My focus combines
-                leadership with technical insight, guiding a talented team as we
-                lay the groundwork for a user-centric, visually engaging
-                platform. We aim to showcase our unique offerings and create a
-                space for meaningful engagement with major industry players like
-                Microsoft, Riot, and Google. With much work ahead, we are
-                excited about the journey to transform our digital presence in
-                the gaming industry.
+              Improved user experience in auditoriums, classrooms, and labs while operating maker space tools like 3D printers, laser 
+              engravers, and CNC machines. Led technical and DIY workshops to teach students and the community how to use maker space tools.
               </div>
             </div>
+            <div className={`${styles.date4} ${"subtitle1"}`}>
+              Aug 2021 - May 2022
+              </div>
           </div>
         </motion.div>
       </div>
