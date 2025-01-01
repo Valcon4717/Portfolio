@@ -10,11 +10,11 @@ import printer from "@/public/3dprinter.svg";
 const Experience = (props: { theme: any }) => {
   const { scrollYProgress } = useScroll();
 
-  const scale1 = useTransform(scrollYProgress, [0, 0.3], [0.1, 1]);
-  const scale2 = useTransform(scrollYProgress, [0.25, 0.5], [0.1, 1]);
-  const scale3 = useTransform(scrollYProgress, [0.45, 0.7], [0.1, 1]);
-  const scale4 = useTransform(scrollYProgress, [0.65, 0.9], [0.1, 1]);
-
+  const scale1 = useTransform(scrollYProgress, [0, 0.2], [0.1, 1]); 
+  const scale2 = useTransform(scrollYProgress, [0.2, 0.4], [0.1, 1]); 
+  const scale3 = useTransform(scrollYProgress, [0.35, 0.6], [0.1, 1]); 
+  const scale4 = useTransform(scrollYProgress, [0.55, 0.8], [0.1, 1]); 
+  
   return (
     <div id="experience" className={`${styles.section} ${props.theme}`}>
       <div className={styles.rowHolder}>
