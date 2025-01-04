@@ -3,10 +3,10 @@ import styles from '@/styles/footer.module.css';
 import Image from 'next/image';
 import figmaDark from '../public/Dark/Figma.svg';
 import figmaLight from '../public/Light/Figma.svg';
-import githubDark from '../public/Dark/Github.svg';
-import githubLight from '../public/Light/Github.svg';
-import linkedinDark from '../public/Dark/Linkedin.svg';
-import linkedinLight from '../public/Light/Linkedin.svg';
+import githubDark from '../public/Dark/GitHub.svg';
+import githubLight from '../public/Light/GitHub.svg';
+import linkedinDark from '../public/Dark/LinkedIn.svg';
+import linkedinLight from '../public/Light/LinkedIn.svg';
 import mailDark from '../public/Dark/Mail.svg';
 import mailLight from '../public/Light/Mail.svg';
 
