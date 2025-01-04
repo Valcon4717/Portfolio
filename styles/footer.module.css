@@ -2,8 +2,8 @@
     min-height: 10vh;
     place-items: center;
     background: var(--card-background);
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .row {
@@ -53,10 +53,5 @@
     justify-content: flex-end;
     gap: 1rem;
     width: 100%;
-    padding-right: 8rem;
-}
-
-.figma {
-    width: 2rem;
-    height: 2rem;
+    padding-right: 9rem;
 }
