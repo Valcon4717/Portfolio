@@ -15,7 +15,7 @@ const Home = (props: { theme: any }) => {
 
   const words = [
     {
-      text: 'Hello,',
+      text: 'hey there,',
     },
     {
       text: "I'm",
