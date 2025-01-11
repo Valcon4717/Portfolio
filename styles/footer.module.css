@@ -2,7 +2,8 @@
     min-height: 10vh;
     place-items: center;
     background: var(--background);
-    padding-bottom: 5rem;
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
     box-shadow: 0em 4px 12px 5px rgba(0, 0, 0, 0.1);
 }
 

@@ -1,4 +1,3 @@
-// pages/about.tsx
 import React from "react";
 import Image from "next/image";
 import Navbar from "@/components/navbar";
@@ -6,7 +5,8 @@ import ThemeSwitch from "@/components/themeSwitch";
 import Footer from "@/components/footer";
 import { useTheme } from "../themeContext";
 import styles from "@/styles/about.module.css";
-import profilePic from "../public/ProfilePic.svg";
+import profilePic from "../public/profilePicture.svg";
+import gallery from "../public/photoGallery.optimized.svg"; 
 
 const About = () => {
   const { theme, setTheme } = useTheme();
@@ -27,8 +27,8 @@ const About = () => {
               src={profilePic}
               alt="Profile Pic"
               width={400}
-              height={400}
-              style={{ objectFit: "contain" }}
+              height={600}
+              style={{ objectFit: "cover"}}
             />
           </div>
           <div className={styles.textBlock}>
@@ -58,7 +58,14 @@ const About = () => {
               </p>
             </div>
           </div>
-          
+        </div>
+        <div className={styles.gallery}>
+          <Image
+              src={gallery}
+              alt="Gallery"
+              height={700}
+              style={{ objectFit: "contain" }}
+            />
         </div>
       </div>
       <Footer theme={theme} />
