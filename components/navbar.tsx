@@ -52,7 +52,8 @@ const Navbar = (props: { theme: any }) => {
           work
         </a>
         <Link href="/about">about</Link>
-        <a href="/path/to/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <Link href="/projects">projects</Link>
+        <a href="/Valeria_Resume.pdf" target="_blank" rel="noopener noreferrer">
           resume
         </a>
       </h6>
