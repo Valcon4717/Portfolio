@@ -10,8 +10,8 @@
   grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
   overflow: hidden;
-  padding-left: 4rem;
-  padding-right: 4rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
 
 .titleBlock {
