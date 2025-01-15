@@ -69,6 +69,7 @@
     animation: slideFadeInUp 1.5s ease-out forwards;
     animation-delay: 1s;
     animation-timing-function: cubic-bezier(0.2, 0.1, 0.2, 1);
+    overflow: hidden;
 }
   
 @keyframes slideFadeInRight {
