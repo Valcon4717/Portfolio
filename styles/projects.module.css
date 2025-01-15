@@ -9,9 +9,7 @@
     justify-content: center;
 }
 
-.WIP {
-    font-family: Roboto;
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
+.cardContainer {
+    width: 100%;
+    height: auto;
 }

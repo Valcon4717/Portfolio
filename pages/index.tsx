@@ -2,7 +2,7 @@ import Footer from "@/components/footer";
 import Experience from "@/components/experience";
 import Navbar from "@/components/navbar";
 import { useEffect } from "react";
-import { useTheme } from '../themeContext'; // Ensure correct path
+import { useTheme } from '../themeContext';
 import ThemeSwitch from "@/components/themeSwitch";
 import Home from "@/components/home";
 
