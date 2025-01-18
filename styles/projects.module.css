@@ -8,8 +8,34 @@
     align-items: center;
     justify-content: center;
 }
-
-.cardContainer {
-    width: 100%;
-    height: auto;
-}
+.embla {
+    max-width: 48rem;
+    margin: auto;
+    width: 100%; /* Equivalent to w-full */
+    height: 100%; /* Equivalent to h-full */
+  }
+  
+  .embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom;
+    margin-left: calc(1rem * -1);
+  }
+  
+  .embla__slide {
+    transform: translate3d(0, 0, 0);
+    flex: 0 0 50%; /* Equivalent to md:w-1/2 */
+    min-width: 50%; /* Equivalent to md:w-1/2 */
+    height: 50%; /* Equivalent to md:h-1/2 */
+    padding-left: 1rem;
+    margin: auto; /* Equivalent to mx-auto */
+  }
+  
+  .embla__slide__img {
+    border-radius: 1.8rem;
+    display: block;
+    height: 19rem;
+    width: 100%; /* Equivalent to w-full */
+    object-fit: contain; /* Equivalent to object-contain */
+  }
+  
+  

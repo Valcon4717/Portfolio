@@ -5,7 +5,7 @@ import avatar3D from '../public/avatare3D.png';
 import arrowDark from '../public/Dark/HomeDownArrow.svg';
 import arrowLight from '../public/Light/HomeDownArrow.svg';
 import { Link } from 'react-scroll';
-import { TypewriterEffectSmooth } from './typewriter-effect';
+import { TypewriterEffectSmooth } from './typewriter';
 
 const Home = (props: { theme: any }) => {
   const [isClient, setIsClient] = useState(false);
