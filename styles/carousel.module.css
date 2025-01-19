@@ -1,0 +1,60 @@
+.embla {
+  height: auto;
+  width: 100%;
+  padding: 3rem;
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(1rem * -1);
+}
+
+.embla__slide {
+  min-width: 0;
+  padding-left: 1rem;
+  position: relative;
+  flex: 0 0 80%;
+}
+
+.embla__parallax__img {
+  max-width: none;
+  width: calc(120%); /* Ensure image is larger than container */
+  object-fit: cover;
+  transform: translateX(0);
+  will-change: transform;
+}
+
+.embla__buttons {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.embla__prev,
+.embla__next {
+  color: var(--on-background);
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.embla__parallax {
+  border-radius: 1.8rem;
+  height: 100%;
+  overflow: hidden;
+}
+.embla__parallax__layer {
+  position: relative; /* Important for transformations */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+}
