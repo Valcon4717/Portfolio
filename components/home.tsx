@@ -9,6 +9,16 @@ import { TypewriterEffectSmooth } from './typeWriter';
 
 const Home = (props: { theme: any }) => {
   const [isClient, setIsClient] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(max-width: 768px)');
+    const handleResize = () => setIsMobile(mediaQuery.matches);
+    handleResize();
+    mediaQuery.addEventListener('change', handleResize);
+    return () => mediaQuery.removeEventListener('change', handleResize);
+  }, []);
+
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -31,14 +41,27 @@ const Home = (props: { theme: any }) => {
   return (
     <div id="home" className={`${styles.section} ${props.theme}`}>
       <div className={styles.grid}>
-        <div className={styles.titleBlock}>
-          <div className={`${styles.title} ${'main-title'}`}>
-            {isClient && <TypewriterEffectSmooth words={words} />}
+        {isMobile ? (
+          <div className={styles.mobileTitle}>
+            <div>
+              hey there, I&apos;m{' '}
+              <span style={{ color: 'var(--primary)' }}>Valeria</span> 👋🏼
+            </div>{' '}
+            <div className={styles.subtitle}>
+              Software developer, coffee lover, and part-time rock climber.
+            </div>
           </div>
-          <div className={styles.subtitle}>
-            Software developer, coffee lover, and part-time rock climber.
+        ) : (
+          <div className={styles.titleBlock}>
+            <div className={`${styles.title} ${'main-title'}`}>
+              {isClient && <TypewriterEffectSmooth words={words} />}
+            </div>
+            <div className={styles.subtitle}>
+              Software developer, coffee lover, and part-time rock climber.
+            </div>
           </div>
-        </div>
+        )}
+
         <div className={styles.personIcon}>
           <Image
             src={avatar3D}

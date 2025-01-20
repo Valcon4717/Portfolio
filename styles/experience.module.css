@@ -144,3 +144,79 @@
   width: 180%; 
   height: 180%;
 }
+
+
+@media (max-width: 768px) {
+  .rowHolder {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    max-width: 80%;
+    box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.050);
+  }
+
+  .cardNum {
+    display: none;
+  }
+
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    width: 100%;
+  }
+
+  .title1,
+  .title2,
+  .title3,
+  .title4 {
+    font-size: 1.2rem;
+  }
+
+  .subTitle1,
+  .subTitle2,
+  .subTitle3,
+  .subTitle4 {
+    font-size: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+  }
+
+  .date1,
+  .date2,
+  .date3,
+  .date4 {
+    font-size: 0.9rem;
+  }
+
+  .subtext1,
+  .subtext2,
+  .subtext3,
+  .subtext4 {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .readMore {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  .TVEmac,
+  .iOSapp,
+  .mixedMac,
+  .printer {
+    display: none;
+  }
+}

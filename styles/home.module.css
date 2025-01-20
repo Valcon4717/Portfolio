@@ -12,6 +12,7 @@
   overflow: hidden;
   padding-left: 8rem;
   padding-right: 8rem;
+  width: 100%;
 }
 
 .titleBlock {
@@ -32,12 +33,12 @@
 
 @keyframes slideFadeInRight {
   from {
-      opacity: 0;
-      transform: translateX(50%);
+    opacity: 0;
+    transform: translateX(50%);
   }
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -86,4 +87,57 @@
   animation: expandShrink 1s ease;
   animation-iteration-count: 1;
   transform-origin: center;
+}
+
+.mobileTitle {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--on-background);
+  text-align: left;
+  padding-left: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100%;
+  }
+
+  .personIcon {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: var(--on-background);
+    padding-top: 1rem;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1500px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    overflow: hidden;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    max-width: 80%;
+  }
+  
 }
