@@ -106,3 +106,46 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .grid {
+    display: flex;
+    grid-template-columns: 1fr;
+    padding-left: 1rem;
+    padding-right: 2rem;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .textBlock {
+    height: auto;
+    width: 90%;
+    text-align: left;
+    padding-top: 4rem;
+    padding-left: 1rem;
+  }
+
+  .imageBlock {
+    display: none;
+  }
+
+  .gallery {
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .subtitle p {
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}

@@ -6,6 +6,7 @@ import styles from '@/styles/navbar.module.css';
 
 const Navbar = (props: { theme: any }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -26,25 +27,16 @@ const Navbar = (props: { theme: any }) => {
     }
   };
 
-  const handleWorkClick = () => {
+  const handleMenuItemClick = (scrollToId: string) => {
     router.push('/').then(() => {
-      scroller.scrollTo('experience', {
+      scroller.scrollTo(scrollToId, {
         smooth: true,
         offset: -50,
         duration: 500,
       });
     });
+    setIsMenuOpen(false);
   };
-
-  const handleProjectClick = () => {
-    router.push('/').then(() => {
-      scroller.scrollTo('projects', {
-        smooth: true,
-        offset: -50,
-        duration: 500,
-      });
-    });
-  }
 
   return (
     <nav
@@ -57,11 +49,53 @@ const Navbar = (props: { theme: any }) => {
           Valeria Contreras
         </div>
       </h6>
+      <div className={styles.navMobile}>
+        <div
+          className={styles.hamburger}
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          <span />
+          <span />
+          <span />
+        </div>
+        <div
+          className={`${styles.mobileMenu} ${
+            isMenuOpen ? styles.open : styles.closed
+          }`}
+        >
+          <a
+            onClick={() => handleMenuItemClick('experience')}
+            style={{ cursor: 'pointer' }}
+          >
+            work
+          </a>
+          <a
+            onClick={() => handleMenuItemClick('projects')}
+            style={{ cursor: 'pointer' }}
+          >
+            projects
+          </a>
+          <Link href="/about">about</Link>
+          <a
+            href="/Valeria_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            resume
+          </a>
+        </div>
+      </div>
       <h6 className={`${styles.navItems}`}>
-        <a onClick={handleWorkClick} style={{ cursor: 'pointer' }}>
+        <a
+          onClick={() => handleMenuItemClick('experience')}
+          style={{ cursor: 'pointer' }}
+        >
           work
         </a>
-        <a onClick={handleProjectClick} style={{ cursor: 'pointer' }}>
+        <a
+          onClick={() => handleMenuItemClick('projects')}
+          style={{ cursor: 'pointer' }}
+        >
           projects
         </a>
         <Link href="/about">about</Link>
