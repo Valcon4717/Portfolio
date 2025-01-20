@@ -40,7 +40,11 @@ const Home = (props: { theme: any }) => {
           </div>
         </div>
         <div className={styles.personIcon}>
-          <Image src={avatar3D} alt="avatar3D icon"  style={{ objectFit: 'contain', width: '80%', height: 'auto'}}  />
+          <Image
+            src={avatar3D}
+            alt="avatar3D icon"
+            style={{ objectFit: 'contain', width: '80%', height: 'auto' }}
+          />
         </div>
       </div>
       <div className={styles.navigation}>

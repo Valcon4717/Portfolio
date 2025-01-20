@@ -21,7 +21,7 @@
 .row4 {
   display: flex;
   justify-content: space-evenly;
-  width: 80vw;
+  max-width: 80%;
   height: 60vh;
   margin-bottom: 5rem;
   background: var(--card-background);

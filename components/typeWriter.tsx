@@ -52,7 +52,10 @@ export const TypewriterEffect = ({
                 <motion.span
                   initial={{}}
                   key={`char-${index}`}
-                  style={{ color: 'var(--primary)', fontWeight: 450 }}
+                  style={{
+                    color: 'var(--primary)',
+                    fontWeight: 450,
+                  }}
                   className={cn(`opacity-0 hidden`, word.className)}
                 >
                   {char}
