@@ -44,15 +44,43 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  gap: 5px;
-  padding-right: 1rem;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-right: 1rem;
+  z-index: 1;
+
 }
 
-.hamburger span {
-  width: 30px;
+.hamburgerLine {
+  display: block;
+  width: 24px;
   height: 3px;
-  background-color: var(--on-surface);
+  background-color: var(--on-background);
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+
+}
+
+.hamburgerLine:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.hamburger.open .hamburgerLine:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .hamburgerLine:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
 }
 
 .mobileMenu {
@@ -70,10 +98,12 @@
   overflow: hidden;
   transition: height 0.3s ease-in-out;
   padding-left: 2rem;
+  margin-top: -3rem;
 }
 
+
 .mobileMenu a {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   width: 100%;
   text-align: left;
   text-decoration: none;
@@ -81,12 +111,13 @@
   font-size: 2rem;
   font-weight: bold;
   letter-spacing: 0.5px;
-  transition: color 0.2s ease-in-out; 
+  transition: color 0.2s ease-in-out;
 }
 
 .mobileMenu.open {
-  height: 90vh;
+  height: 100vh;
 }
+
 
 .mobileMenu.closed {
   height: 0;
@@ -104,5 +135,13 @@
 
   .title {
     padding-left: 1rem;
+    z-index: 1;
+    background: var(--background);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .box {
+    padding: 1rem;
   }
 }

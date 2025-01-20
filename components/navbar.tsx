@@ -50,14 +50,16 @@ const Navbar = (props: { theme: any }) => {
         </div>
       </h6>
       <div className={styles.navMobile}>
-        <div
-          className={styles.hamburger}
+        <button
+          className={`${styles.hamburger} ${isMenuOpen ? styles.open : ''}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={isMenuOpen}
         >
-          <span />
-          <span />
-          <span />
-        </div>
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+          <span className={styles.hamburgerLine}></span>
+        </button>
         <div
           className={`${styles.mobileMenu} ${
             isMenuOpen ? styles.open : styles.closed

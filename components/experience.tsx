@@ -5,7 +5,7 @@ import Image from "next/image";
 import TVEmac from "@/public/TVEmac.svg";
 import iOSapp from "@/public/ios.svg";
 import mixedMac from "@/public/mixed.svg";
-import printer from "@/public/3dprinter.svg";
+import printer from "@/public/3Dprinter.svg";
 
 const Experience = (props: { theme: any }) => {
   const [isMobile, setIsMobile] = useState(false);

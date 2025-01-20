@@ -1,8 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import styles from '@/styles/themeSwitch.module.css';
-import sunLogo from "../public/light/Sun.svg";
-import moonLogo from "../public/dark/Moon.svg";
+import sunLogo from "../public/Light/Sun.svg";
+import moonLogo from "../public/Dark/Moon.svg";
 
 const ThemeSwitch = (props: { theme:any, toggleTheme:any }) => {
   return (

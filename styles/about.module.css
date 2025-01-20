@@ -25,10 +25,11 @@
   flex-direction: column;
   order: 1;
   height: 90vh;
-  width: 30rem;
+  width: 35rem;
   animation: slideFadeInLeft 1.5s ease-out forwards;
   animation-timing-function: cubic-bezier(0.2, 0.1, 0.2, 1);
   overflow: hidden;
+  padding-left: 5rem;
 }
 
 .imageBlock {
@@ -44,7 +45,7 @@
 
 .title {
   padding-bottom: 1rem;
-  color: var(--primary);
+  color: var(--on-background);
 }
 
 .subtitle {
@@ -72,6 +73,29 @@
   animation: slideFadeInUp 2s ease-out forwards;
   animation-timing-function: cubic-bezier(0.2, 0.1, 0.2, 1);
   overflow: hidden;
+}
+
+.contactButton {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--background);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease-in-out;
+  width: 40%;
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: bold;
 }
 
 @keyframes slideFadeInRight {
@@ -147,5 +171,10 @@
   .title {
     font-size: 1.5rem;
     padding-bottom: 1rem;
+  }
+
+  .contactButton {
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
