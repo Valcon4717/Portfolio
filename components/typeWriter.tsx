@@ -1,5 +1,3 @@
-'use client';
-
 import { cn } from '@/utils/cn';
 import { motion, stagger, useAnimate, useInView } from 'framer-motion';
 import { useEffect } from 'react';
@@ -42,7 +40,7 @@ export const TypewriterEffect = ({
         }
       );
     }
-  }, [isInView]);
+  }, [isInView, animate]);
 
   const renderWords = () => {
     return (
@@ -54,7 +52,10 @@ export const TypewriterEffect = ({
                 <motion.span
                   initial={{}}
                   key={`char-${index}`}
-                  style={{ color: 'var(--primary)', fontWeight: 450 }}
+                  style={{
+                    color: 'var(--primary)',
+                    fontWeight: 450,
+                  }}
                   className={cn(`opacity-0 hidden`, word.className)}
                 >
                   {char}

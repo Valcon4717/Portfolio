@@ -26,8 +26,6 @@ const About = () => {
             <Image
               src={profilePic}
               alt="Profile Pic"
-              width={400}
-              height={600}
               style={{ objectFit: "cover"}}
             />
           </div>

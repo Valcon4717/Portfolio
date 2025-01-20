@@ -5,7 +5,7 @@ import avatar3D from '../public/avatare3D.png';
 import arrowDark from '../public/Dark/HomeDownArrow.svg';
 import arrowLight from '../public/Light/HomeDownArrow.svg';
 import { Link } from 'react-scroll';
-import { TypewriterEffectSmooth } from './typewriter-effect';
+import { TypewriterEffectSmooth } from './typeWriter';
 
 const Home = (props: { theme: any }) => {
   const [isClient, setIsClient] = useState(false);
@@ -40,7 +40,11 @@ const Home = (props: { theme: any }) => {
           </div>
         </div>
         <div className={styles.personIcon}>
-          <Image src={avatar3D} alt="avatar3D icon"  style={{ objectFit: 'contain', width: '80%', height: 'auto'}}  />
+          <Image
+            src={avatar3D}
+            alt="avatar3D icon"
+            style={{ objectFit: 'contain', width: '80%', height: 'auto' }}
+          />
         </div>
       </div>
       <div className={styles.navigation}>

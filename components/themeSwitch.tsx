@@ -4,8 +4,6 @@ import styles from '@/styles/themeSwitch.module.css';
 import sunLogo from "../public/light/Sun.svg";
 import moonLogo from "../public/dark/Moon.svg";
 
-
-
 const ThemeSwitch = (props: { theme:any, toggleTheme:any }) => {
   return (
     <div className={props.theme}>

@@ -2,9 +2,10 @@ import Footer from "@/components/footer";
 import Experience from "@/components/experience";
 import Navbar from "@/components/navbar";
 import { useEffect } from "react";
-import { useTheme } from '../themeContext'; // Ensure correct path
+import { useTheme } from '../themeContext';
 import ThemeSwitch from "@/components/themeSwitch";
 import Home from "@/components/home";
+import Projects from "@/components/projects";
 
 const Index = () => {
   const { theme, setTheme } = useTheme();
@@ -23,6 +24,7 @@ const Index = () => {
       <Navbar theme={theme}/>
       <Home theme={theme}/>
       <Experience theme={theme}/>
+      <Projects theme={theme}/>
       <Footer theme={theme}/>
     </div>
   );

@@ -36,6 +36,16 @@ const Navbar = (props: { theme: any }) => {
     });
   };
 
+  const handleProjectClick = () => {
+    router.push('/').then(() => {
+      scroller.scrollTo('projects', {
+        smooth: true,
+        offset: -50,
+        duration: 500,
+      });
+    });
+  }
+
   return (
     <nav
       className={`${styles.box} ${isScrolled ? styles.scrolled : ''} ${
@@ -51,8 +61,10 @@ const Navbar = (props: { theme: any }) => {
         <a onClick={handleWorkClick} style={{ cursor: 'pointer' }}>
           work
         </a>
+        <a onClick={handleProjectClick} style={{ cursor: 'pointer' }}>
+          projects
+        </a>
         <Link href="/about">about</Link>
-        <Link href="/projects">projects</Link>
         <a href="/Valeria_Resume.pdf" target="_blank" rel="noopener noreferrer">
           resume
         </a>
