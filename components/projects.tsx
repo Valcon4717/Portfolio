@@ -27,7 +27,7 @@ export const projects = [
     title: "PowerPit",
     description:
       "A fitness-tracking web application built using React, Firebase, and Fluent UI. It provides features for workout creation, scheduling, nutrition tracking, and gym membership management. Developed with the Atomic Design Pattern, it also integrates AI for personalized workout plans.",
-    link: "https://github.com/UTEP-Agile-SP24/team-repository-team-9",
+    link: "https://team-9-56497.firebaseapp.com/",
     sub: "React.js TypeScript JavaScript Firebase FireStore FluentUI Tailwind CSS Figma Vite"
   },
   {
