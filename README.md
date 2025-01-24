@@ -31,8 +31,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## 🚀 Deployment
 
-Coming soon!!!
-
+https://www.v-contreras.com/
 
 ## 📚 Resources
 
