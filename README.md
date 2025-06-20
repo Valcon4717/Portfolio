@@ -11,7 +11,7 @@ This repository contains the source code for my **personal portfolio**, a fully 
 
 ## 🎨 Design
 
-The design of this portfolio was conceptualized and created entirely by me, focusing on a modern and professional aesthetic. The **color scheme**, **layout**, and overall visuals adhere to Material Design guidelines. You can view the Figma design [here](https://www.figma.com/design/D0BjglGzAK1hs7K22biuN1/Portfolio?node-id=0-1&m=dev).
+The design of this portfolio was conceptualized and created entirely by me, focusing on a modern and professional aesthetic. The **color scheme**, **layout**, and overall visuals adhere to Material Design guidelines. You can view the Figma design [here](https://www.figma.com/design/84w1dYkVwAq4SFoHaitVUV/UniCart?node-id=0-1&t=HS4s2IDZKp6C2ytJ-1).
 
 ## 🛠️ Getting Started
 
