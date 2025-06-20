@@ -24,6 +24,20 @@ export const projects = [
     sub: "Next.js TypeScript JavaScript CSS Tailwind Figma"
   },
   {
+    title: "TRACE",
+    description:
+      "A web-app designed for the DoD to consolidate penetration testing tools and techniques into a single intuitive real-time dashboard. TRACE supports project-based scanning, AI-powered credential generation, and visual mapping of vulnerabilities using modular service components.",
+    link: "https://github.com/Valcon4717/TRACE_CyberGuardians",
+    sub: "SvelteKit FastAPI Python Neo4j Tailwind CSS Figma"
+  },
+  {
+    title: "UniCart",
+    description:
+      "A collaborative grocery Flutter application designed for students and roommates to manage grocery lists and optimize shopping experiences. The app enables real-time list syncing, item tracking, group management, and future integrations like iOS Live Activities and budget split tools.",
+    link: "https://github.com/Valcon4717/UniCart",
+    sub: "Flutter Dart Firebase Firestore KrogerAPI Figma"
+  },
+  {
     title: "PowerPit",
     description:
       "A fitness-tracking web application built using React, Firebase, and Fluent UI. It provides features for workout creation, scheduling, nutrition tracking, and gym membership management. Developed with the Atomic Design Pattern, it also integrates AI for personalized workout plans.",
@@ -36,13 +50,6 @@ export const projects = [
       "A machine learning project analyzing factors influencing student performance, such as study hours, attendance, and resource access. Focused on data-driven decision-making, it uses linear regression, Lasso, Ridge, and Random Forest models to highlight impactful habits beyond studying.",
     link: "https://github.com/Valcon4717/StudyBuddy/tree/main",
     sub: "Python Pandas NumPy Scikit-learn GoogleColab"
-  },
-  {
-    title: "TRACE",
-    description:
-      "A web-app designed for the DoD to consolidate penetration testing tools and techniques into a single intuitive interface. It empowers analysts to perform reconnaissance on internal networks, generate custom credentials using AI, and produce real-time insights of discovered vulnerabilities.",
-    link: "https://www.figma.com/design/NPguwVks5wNzuG3mCRH8Zq/TRACE?node-id=282-1513&m=dev",
-    sub: "WIP"
   },
   {
     title: "UTEP Instructors",
